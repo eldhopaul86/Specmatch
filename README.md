@@ -1,5 +1,8 @@
 💻 AI-Powered PC Spec Recommender - SPECMATCH
+
+
 An AI-based PC specification recommendation system that suggests optimal PC builds based on your budget and purpose (e.g., gaming, editing, office work). This tool helps users make smarter hardware choices using machine learning and optimization techniques.
+
 
 🚀 Features
 🔢 Smart Recommendations: Suggests CPU, GPU, RAM, Storage, etc., tailored to budget and use-case.
@@ -10,8 +13,6 @@ An AI-based PC specification recommendation system that suggests optimal PC buil
 
 🌐 User-Friendly Interface: Simple web interface using Flask (Python) and HTML/CSS frontend.
 
-📸 Demo
-Add a screenshot or link to a demo video here (e.g., hosted on Vercel/Render)
 
 
 🛠️ Tech Stack
@@ -42,8 +43,6 @@ Displays recommended CPU, GPU, RAM, Storage, etc.
 
 📦 Installation
 bash
-Copy
-Edit
 git clone https://github.com/your-username/pc-spec-recommender.git
 cd pc-spec-recommender
 python -m venv venv
