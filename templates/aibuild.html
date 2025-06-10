@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add this in the <head> section of your aibuild.html file -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Build Recommender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFAB2D', // Yellow/Gold
+                        secondary: '#FFB946', // Lighter gold
+                        accent: '#FFC761', // Lightest gold
+                        dark: '#1A2331', // Deep navy/black
+                        darker: '#131B27', // Even darker background
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #1A2331;
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(-45deg, #131B27, #1A2331, #1E283A, #232F41);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(19, 27, 39, 0.75);
+            border-bottom: 1px solid rgba(255, 171, 45, 0.12);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 171, 45, 0.7), 0 0 30px rgba(255, 171, 45, 0.5);
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 171, 45, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .mesh-gradient {
+            background-color: #131B27;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 171, 45, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 0%, rgba(255, 185, 70, 0.2) 0px, transparent 60%),
+                radial-gradient(at 0% 100%, rgba(255, 199, 97, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 100%, rgba(19, 27, 39, 0.4) 0px, transparent 60%);
+        }
+        
+        .nav-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, #FFAB2D, #FFB946);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .form-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 35, 49, 0.8);
+            border: 1px solid rgba(255, 171, 45, 0.15);
+        }
+        
+        .button-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .button-hover:hover {
+            transform: translateY(-2px);
+        }
+        
+        .radio-container:checked + span {
+            color: white;
+            font-weight: 500;
+        }
+        
+        .radio-option {
+            border: 1px solid rgba(255, 171, 45, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .radio-option:hover {
+            background-color: rgba(255, 171, 45, 0.1);
+            border-color: rgba(255, 171, 45, 0.5);
+        }
+        
+        .radio-option.selected {
+            background-color: rgba(255, 171, 45, 0.2);
+            border-color: #FFAB2D;
+        }
+        
+        .radio-icon {
+            background-color: rgba(255, 171, 45, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .radio-option:hover .radio-icon {
+            background-color: rgba(255, 171, 45, 0.3);
+            color: #FFAB2D;
+        }
+        
+        .radio-option.selected .radio-icon {
+            background-color: #FFAB2D;
+            color: #131B27;
+        }
+        
+        /* Enhanced decorative particles */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .particle-1 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 16rem;
+            height: 16rem;
+            background-color: rgba(255, 171, 45, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating 8s ease-in-out infinite;
+        }
+        
+        .particle-2 {
+            position: absolute;
+            bottom: 20%;
+            left: 25%;
+            width: 24rem;
+            height: 24rem;
+            background-color: rgba(255, 185, 70, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        .particle-3 {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            width: 18rem;
+            height: 18rem;
+            background-color: rgba(255, 199, 97, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #FFAB2D, #FFB946);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .build-table {
+            background-color: rgba(19, 27, 39, 0.7);
+            border: 1px solid rgba(255, 171, 45, 0.15);
+        }
+        
+        .build-table th {
+            background-color: rgba(255, 171, 45, 0.1);
+        }
+        
+        .build-table tr {
+            border-bottom: 1px solid rgba(255, 171, 45, 0.1);
+        }
+        
+        .build-table tr:last-child {
+            border-bottom: none;
+        }
+
+        /* Custom Alert Styles */
+        .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, rgba(255, 171, 45, 0.95), rgba(255, 185, 70, 0.95));
+            color: #131B27;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            text-align: center;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+
+        .alert-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            backdrop-filter: blur(2px);
+        }
+
+        .budget-error {
+            border-color: #ef4444 !important;
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+    </style>
+</head>
+<body class="animated-gradient text-white min-h-screen flex flex-col font-sans">
+    <!-- Enhanced decorative particles -->
+    <div class="particles">
+        <div class="particle-1"></div>
+        <div class="particle-2"></div>
+        <div class="particle-3"></div>
+    </div>
+
+    <!-- Premium Standardized Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="{{ url_for('home') }}" class="flex items-center space-x-2 group">
+                    <div class="text-2xl font-extrabold transition-all duration-300 group-hover:scale-105">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>
+                        <span>MATCH</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="{{ url_for('home') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        About
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center text-white hover:text-primary focus:outline-none transition-colors duration-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="menu-items" class="hidden md:hidden py-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="{{ url_for('home') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow relative z-10 pt-32 pb-16">
+        <div class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hero Section -->
+            <div class="mb-12 text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gradient">Build Your Dream PC</h1>
+                <p class="text-gray-400 text-lg md:text-xl">Custom recommendations based on your needs and budget</p>
+            </div>
+            
+            <!-- Form Card -->
+            <div class="form-card rounded-2xl shadow-2xl p-6 md:p-10">
+                <form id="pc-form" method="get" class="space-y-8">
+                    <div>
+                        <label class="block font-medium text-white text-lg mb-3">What's your budget?</label>
+                        <div class="relative">
+                            <span class="absolute left-4 top-3 text-gray-400">₹</span>
+                            <input type="number" id="budget" placeholder="Enter amount in INR" class="pl-8 block w-full p-3 border border-gray-700 rounded-lg bg-darker text-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent transition" required min="20000">
+                            <div id="budget-error" class="error-message">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                Budget must be at least ₹20,000 to build a PC
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block font-medium text-white text-lg mb-4">What will you use your PC for?</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="gaming" class="form-radio hidden radio-container" checked>
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-gamepad text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">Gaming</span>
+                                </span>
+                            </label>
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="content creation" class="form-radio hidden radio-container">
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-video text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">Content Creation</span>
+                                </span>
+                            </label>
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="3d rendering" class="form-radio hidden radio-container">
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-cube text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">3D Rendering</span>
+                                </span>
+                            </label>
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="editing" class="form-radio hidden radio-container">
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-edit text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">Video Editing</span>
+                                </span>
+                            </label>
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="office/productivity" class="form-radio hidden radio-container">
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-briefcase text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">Office/Productivity</span>
+                                </span>
+                            </label>
+                            <label class="relative radio-option flex items-center p-4 rounded-lg transition cursor-pointer group">
+                                <input type="radio" name="use-case" value="general purpose" class="form-radio hidden radio-container">
+                                <span class="flex items-center w-full">
+                                    <span class="radio-icon inline-flex items-center justify-center w-10 h-10 rounded-full mr-3 transition-all">
+                                        <i class="fas fa-laptop text-lg"></i>
+                                    </span>
+                                    <span class="text-gray-300 group-hover:text-white transition-colors">General Purpose</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-4 flex justify-center">
+                        <button type="submit" class="group relative w-48 h-12 overflow-hidden bg-gradient-to-r from-primary to-secondary text-black font-medium rounded-full hover:text-white transition duration-300 button-hover">
+                            <span class="absolute inset-0 w-full h-full bg-black scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                            <span class="relative flex items-center justify-center">
+                                <span>Generate Build</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="build-results" class="mt-10 hidden">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold text-white">Your Custom Build</h2>
+                        <span class="px-3 py-1 bg-gradient-to-r from-primary to-secondary text-black text-xs font-bold rounded-full">RECOMMENDED</span>
+                    </div>
+                    
+                    <div class="overflow-hidden rounded-lg build-table shadow-xl">
+                        <table class="w-full text-gray-300">
+                            <thead>
+                                <tr>
+                                    <th class="py-3 px-4 text-left font-medium">Parts</th>
+                                    <th class="py-3 px-4 text-left font-medium">Name</th>
+                                    <th class="py-3 px-4 text-left font-medium">Performance score</th>
+                                    <th class="py-3 px-4 text-right font-medium">Price (₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="build-table-body"></tbody>
+                            <tfoot id="build-table-footer" class="bg-gradient-to-r from-primary/10 to-secondary/10">
+                                <tr>
+                                    <td class="py-3 px-4 font-bold text-white" colspan="3">Total</td>
+                                    <td id="total-price" class="py-3 px-4 font-bold text-white text-right"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-center space-x-4">
+                        <button id="save-build-button" class="px-5 py-2 bg-gradient-to-r from-primary to-secondary text-black text-sm font-medium rounded-full hover:bg-black hover:text-white hover:border hover:border-white transition-all duration-300 button-hover hover-glow">
+                            <i class="fas fa-shopping-cart mr-2"></i> Save your build
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="mt-12 relative z-5">
+        <div class="mesh-gradient">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-5 pb-12">
+                <!-- Footer content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-4">
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center mb-6">
+                            <div class="text-2xl font-extrabold">
+                                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>
+                                <span>MATCH</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-8 leading-relaxed">Building the perfect PC for your specific needs has never been easier. Join thousands of satisfied builders.</p>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="pt-8 border-t border-gray-800">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                            © 2025 SPECMATCH. All rights reserved.
+                        </p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Privacy Policy</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Terms of Service</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const menuItems = document.getElementById('menu-items');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+        });
+
+        // Budget validation function
+        function validateBudget(budget) {
+            const budgetInput = document.getElementById('budget');
+            const errorMessage = document.getElementById('budget-error');
+            
+            if (budget < 20000) {
+                budgetInput.classList.add('budget-error');
+                errorMessage.style.display = 'block';
+                return false;
+            } else {
+                budgetInput.classList.remove('budget-error');
+                errorMessage.style.display = 'none';
+                return true;
+            }
+        }
+
+        // Custom alert function
+        function showCustomAlert(message, title = 'Alert') {
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'alert-overlay';
+            
+            // Create alert
+            const alert = document.createElement('div');
+            alert.className = 'custom-alert';
+            alert.innerHTML = `
+                <div class="mb-4">
+                    <i class="fas fa-exclamation-triangle text-2xl mb-2"></i>
+                    <h3 class="text-lg font-bold">${title}</h3>
+                </div>
+                <p class="mb-6">${message}</p>
+                <button id="alert-ok" class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition-colors font-medium">
+                    OK
+                </button>
+            `;
+            
+            // Add to page
+            document.body.appendChild(overlay);
+            document.body.appendChild(alert);
+            
+            // Handle OK button
+            document.getElementById('alert-ok').addEventListener('click', () => {
+                document.body.removeChild(overlay);
+                document.body.removeChild(alert);
+            });
+            
+            // Handle overlay click
+            overlay.addEventListener('click', () => {
+                document.body.removeChild(overlay);
+                document.body.removeChild(alert);
+            });
+        }
+
+        // Real-time budget validation
+        document.getElementById('budget').addEventListener('input', function() {
+            const budget = parseInt(this.value) || 0;
+            validateBudget(budget);
+        });
+
+        // Radio button selection styling
+        document.querySelectorAll('input[name="use-case"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.radio-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                
+                if (this.checked) {
+                    this.closest('.radio-option').classList.add('selected');
+                }
+            });
+        });
+
+        // Initialize first radio as selected
+        document.querySelector('input[name="use-case"]:checked').closest('.radio-option').classList.add('selected');
+
+        document.getElementById('pc-form').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent form from reloading the page
+    
+            // Get budget and validate
+            const budget = parseInt(document.getElementById('budget').value) || 0;
+            const useCase = document.querySelector('input[name="use-case"]:checked').value;
+
+            // Validate budget first
+            if (!validateBudget(budget)) {
+                showCustomAlert(
+                    'We need at least ₹20,000 to recommend a viable PC build. Please increase your budget and try again.',
+                    'Insufficient Budget'
+                );
+                return;
+            }
+    
+            // API URL
+            const apiUrl = `http://127.0.0.1:4000/build-pc?budget=${budget}&use_case=${useCase}`;
+    
+            try {
+                // Fetch data from API using Axios
+                const response = await axios.get(apiUrl);
+                
+                if (!response.data || !response.data.components) {
+                    throw new Error("Invalid response from server.");
+                }
+    
+                const data = response.data;
+                console.log("Response Data:", data);
+    
+                // Get table body and footer
+                const tableBody = document.getElementById('build-table-body');
+                const totalPrice = document.getElementById('total-price');
+    
+                // Clear previous results
+                tableBody.innerHTML = '';
+    
+                // Populate the table with new results
+                let totalCost = 0;
+                data.components.forEach(component => {
+                    totalCost += component.price;
+    
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="py-3 px-4 border-b border-gray-700">${component.part}</td>
+                        <td class="py-3 px-4 border-b border-gray-700">${component.name}</td>
+                        <td class="py-3 px-4 text-right border-b border-gray-700">${component.performance_score}</td>
+                        <td class="py-3 px-4 text-right border-b border-gray-700">₹${component.price.toLocaleString()}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+    
+                // Set total price
+                totalPrice.textContent = `₹${totalCost.toLocaleString()}`;
+    
+                // Show the results section
+                document.getElementById('build-results').classList.remove('hidden');
+    
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                
+                let errorMessage = "An error occurred while fetching data. Please try again.";
+                if (error.response) {
+                    // Server responded with a status outside the 2xx range
+                    console.error("Server Error:", error.response.data);
+                    errorMessage = `Error: ${error.response.status} - ${error.response.data?.message || "Something went wrong."}`;
+                } else if (error.request) {
+                    // Request was made but no response received
+                    errorMessage = "No response from server. Please check your network or API server.";
+                }
+                alert(errorMessage);
+            }
+        });
+
+        // AuthenticatorAssertionResponse
+       // Add this to your script section in aibuild.html
+document.addEventListener('DOMContentLoaded', function() {
+    // Use event delegation in case the button isn't loaded yet
+    document.addEventListener('click', function(event) {
+        if (event.target.closest('#save-build-button')) {
+            saveBuild();
+        }
+    });
+    
+    async function saveBuild() {
+        // Make sure we have results to save
+        const buildResults = document.getElementById('build-results');
+        if (buildResults.classList.contains('hidden')) {
+            alert('Please generate a build before saving.');
+            return;
+        }
+        
+        // Get budget and use case
+        const budget = document.getElementById('budget').value;
+        const useCase = document.querySelector('input[name="use-case"]:checked').value;
+        
+        // Get components from the table
+        const componentRows = document.querySelectorAll('#build-table-body tr');
+        const components = [];
+        
+        componentRows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            components.push({
+                part: cells[0].textContent,
+                name: cells[1].textContent,
+                performance_score: parseFloat(cells[2].textContent),
+                price: parseFloat(cells[3].textContent.replace('₹', '').replace(/,/g, ''))
+            });
+        });
+        
+        // Get CSRF token if using WTForms (check if there's a meta tag with csrf-token)
+        let csrfToken = '';
+        const metaToken = document.querySelector('meta[name="csrf-token"]');
+        if (metaToken) {
+            csrfToken = metaToken.getAttribute('content');
+        }
+        
+        try {
+            console.log("Attempting to save build with data:", {
+                budget, useCase, components
+            });
+            
+            // Send data to server
+            const response = await axios.post('/save-build', {
+                budget: parseInt(budget),
+                use_case: useCase,
+                components: components,
+                build_name: `${useCase.charAt(0).toUpperCase() + useCase.slice(1)} Build (₹${budget})`
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrfToken
+                }
+            });
+            
+            console.log("Server response:", response.data);
+            
+            if (response.data.success) {
+                alert('Build saved successfully!');
+            } else {
+                alert('Error saving build: ' + response.data.message);
+            }
+        } catch (error) {
+            console.error("Error saving build:", error);
+            if (error.response) {
+                console.error("Response data:", error.response.data);
+                alert('Error: ' + (error.response.data.message || 'Server error'));
+            } else {
+                alert('Error saving build. Please try again.');
+            }
+        }
+    }
+});
+    </script>
+</body>
+</html>

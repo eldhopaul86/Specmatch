@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECMATCH - PC Build Recommender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '320px',
+                        // Tailwind default breakpoints
+                        // 'sm': '640px',
+                        // 'md': '768px',
+                        // 'lg': '1024px',
+                        // 'xl': '1280px',
+                        // '2xl': '1536px',
+                    },
+                    colors: {
+                        primary: '#FFAB2D', // Yellow/Gold
+                        secondary: '#FFB946', // Lighter gold
+                        accent: '#FFC761', // Lightest gold
+                        dark: '#1A2331', // Deep navy/black
+                        darker: '#131B27', // Even darker background
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #1A2331;
+            overflow-x: hidden;
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(-45deg, #131B27, #1A2331, #1E283A, #232F41);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(19, 27, 39, 0.75);
+            border-bottom: 1px solid rgba(255, 171, 45, 0.12);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 171, 45, 0.7), 0 0 30px rgba(255, 171, 45, 0.5);
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 171, 45, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .mesh-gradient {
+            background-color: #131B27;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 171, 45, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 0%, rgba(255, 185, 70, 0.2) 0px, transparent 60%),
+                radial-gradient(at 0% 100%, rgba(255, 199, 97, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 100%, rgba(19, 27, 39, 0.4) 0px, transparent 60%);
+        }
+        
+        .nav-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, #FFAB2D, #FFB946);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .floating-slow {
+            animation: floating 8s ease-in-out infinite;
+        }
+        
+        .floating-fast {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 171, 45, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0); }
+        }
+        
+        .conic-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .conic-border::before {
+            content: "";
+            position: absolute;
+            inset: -5px;
+            background: conic-gradient(from 0deg, #FFAB2D, #FFB946, #FFC761, #131B27, #FFAB2D);
+            z-index: -2;
+            animation: rotate 4s linear infinite;
+        }
+        
+        .conic-border::after {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            background: #131B27;
+            border-radius: inherit;
+            z-index: -1;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 171, 45, 0.15) 0%, rgba(255, 185, 70, 0.15) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #FFAB2D, #FFB946);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .nav-dropdown {
+            transform: translateY(10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-dropdown.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Profile dropdown styles */
+        .profile-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            min-width: 240px;
+            background: rgba(19, 27, 39, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 171, 45, 0.2);
+            border-radius: 12px;
+            padding: 12px 0;
+            margin-top: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .profile-dropdown::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            right: 16px;
+            width: 12px;
+            height: 12px;
+            background: rgba(19, 27, 39, 0.95);
+            border-left: 1px solid rgba(255, 171, 45, 0.2);
+            border-top: 1px solid rgba(255, 171, 45, 0.2);
+            transform: rotate(45deg);
+        }
+        
+        .profile-item {
+            padding: 12px 16px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .profile-item:hover {
+            background-color: rgba(255, 171, 45, 0.1);
+        }
+        
+        .profile-avatar {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #FFAB2D, #FFB946);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #131B27;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .profile-avatar:hover {
+            box-shadow: 0 0 15px rgba(255, 171, 45, 0.5);
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        
+        /* Improved responsiveness for extra small devices */
+        @media (max-width: 400px) {
+            .xs-text-center {
+                text-align: center;
+            }
+            .xs-px-2 {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .xs-text-sm {
+                font-size: 0.875rem;
+            }
+            .xs-text-xs {
+                font-size: 0.75rem;
+            }
+            .xs-py-2 {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .xs-my-2 {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .xs-w-full {
+                width: 100%;
+            }
+            .profile-dropdown {
+                min-width: 200px;
+                right: -20px;
+            }
+        }
+        
+        /* Hide decorative elements on smaller screens for better performance */
+        @media (max-width: 640px) {
+            .floating, .floating-slow, .floating-fast {
+                opacity: 0.3;
+                transform: scale(0.5);
+            }
+        }
+        
+        /* Improve footer spacing on small screens */
+        @media (max-width: 768px) {
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="animated-gradient text-white min-h-screen flex flex-col font-sans">
+    <!-- Enhanced decorative particles - optimized for smaller screens -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute top-10 left-10 w-24 xs:w-16 sm:w-48 h-24 xs:h-16 sm:h-48 bg-primary/15 rounded-full blur-3xl floating-slow"></div>
+        <div class="absolute bottom-32 left-1/4 w-32 xs:w-24 sm:w-64 h-32 xs:h-24 sm:h-64 bg-secondary/15 rounded-full blur-3xl floating"></div>
+        <div class="absolute top-1/3 right-20 w-24 xs:w-16 sm:w-48 h-24 xs:h-16 sm:h-48 bg-accent/15 rounded-full blur-3xl floating-fast"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-16 xs:w-12 sm:w-32 h-16 xs:h-12 sm:h-32 bg-darker/20 rounded-full blur-3xl floating-slow"></div>
+    </div>
+
+    <!-- Optimized Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center h-14 xs:h-16 sm:h-20">
+                <!-- Logo - more responsive text sizes -->
+                <a href="{{ url_for('home') }}" class="flex items-center space-x-2 group">
+                    <div class="text-lg xs:text-xl sm:text-2xl font-extrabold transition-all duration-300 group-hover:scale-105">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>MATCH
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-3 lg:space-x-8">
+                    <a href="{{ url_for('home') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        About
+                    </a>
+                    
+                    <!-- User Profile Dropdown -->
+                    <div class="relative">
+                        <div id="profile-button" class="profile-avatar">
+                            {{ current_user.username[0].upper() if current_user.is_authenticated else 'U' }}
+                        </div>
+                        <div id="profile-dropdown" class="profile-dropdown nav-dropdown">
+                            <div class="profile-item border-b border-gray-700 pb-3 mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="profile-avatar text-sm">
+                                        {{ current_user.username[0].upper() if current_user.is_authenticated else 'U' }}
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white text-sm">{{ current_user.username if current_user.is_authenticated else 'Guest' }}</p>
+                                        <p class="text-gray-400 text-xs">{{ current_user.email if current_user.is_authenticated else 'guest@example.com' }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <a href="{{ url_for('buildp') }}" class="profile-item flex items-center space-x-3 text-gray-300 hover:text-white">
+                                <i class="fas fa-hammer text-primary"></i>
+                                <span class="text-sm">My Builds</span>
+                            </a>
+                            <hr class="border-gray-700 my-2">
+                            <a href="{{ url_for('logout') }}" class="profile-item flex items-center space-x-3 text-red-400 hover:text-red-300">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span class="text-sm">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button - improved touch target -->
+                <div class="md:hidden flex items-center space-x-3 xs:space-x-4">
+                    <!-- User Profile for Mobile -->
+                    <div class="relative">
+                        <div id="mobile-profile-button" class="profile-avatar">
+                            {{ current_user.username[0].upper() if current_user.is_authenticated else 'U' }}
+                        </div>
+                        <div id="mobile-profile-dropdown" class="profile-dropdown nav-dropdown">
+                            <div class="profile-item border-b border-gray-700 pb-3 mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="profile-avatar text-sm">
+                                        {{ current_user.username[0].upper() if current_user.is_authenticated else 'U' }}
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white text-sm">{{ current_user.username if current_user.is_authenticated else 'Guest' }}</p>
+                                        <p class="text-gray-400 text-xs">{{ current_user.email if current_user.is_authenticated else 'guest@example.com' }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{{ url_for('profile') }}" class="profile-item flex items-center space-x-3 text-gray-300 hover:text-white">
+                                <i class="fas fa-user-circle text-primary"></i>
+                                <span class="text-sm">My Profile</span>
+                            </a>
+                            <a href="{{ url_for('buildp') }}" class="profile-item flex items-center space-x-3 text-gray-300 hover:text-white">
+                                <i class="fas fa-hammer text-primary"></i>
+                                <span class="text-sm">My Builds</span>
+                            </a>
+                            <hr class="border-gray-700 my-2">
+                            <a href="{{ url_for('logout') }}" class="profile-item flex items-center space-x-3 text-red-400 hover:text-red-300">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span class="text-sm">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <button id="mobile-menu-button" class="flex items-center text-white hover:text-primary focus:outline-none transition-colors duration-300 p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Navigation - improved padding and spacing -->
+            <div id="menu-items" class="hidden md:hidden py-3 animate-fade-in">
+                <div class="flex flex-col space-y-2">
+                    <a href="{{ url_for('home') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content - improved responsive spacing -->
+    <main class="flex-grow relative z-10 pt-16 xs:pt-18 sm:pt-20 md:pt-24">
+        <div class="flex flex-col items-center justify-center text-center px-3 xs:px-4 sm:px-6 md:px-8 lg:px-16 max-w-7xl mx-auto">
+            <!-- Hero section with enhanced responsive styling -->
+            <div class="relative mx-auto max-w-3xl pt-6 xs:pt-8 sm:pt-12 md:pt-16">
+                <div class="absolute inset-0 blur-3xl bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full"></div>
+                <span class="text-gray-400 text-xs xs:text-sm uppercase tracking-wide">Find Your Perfect Build</span>
+                <h1 class="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold my-3 xs:my-4 sm:my-6 leading-tight md:leading-snug">
+                    Where performance meets precision in your dream PC
+                </h1>
+                <p class="text-gray-300 mb-6 xs:mb-8 sm:mb-10 max-w-3xl text-sm xs:text-base sm:text-lg font-light leading-relaxed px-1 xs:px-2 sm:px-4 md:px-0">
+                    Unlock the ultimate PC recommendation platform, where tailored hardware suggestions seamlessly match your unique needs. Whether you're a gamer, content creator, or professional, discover personalized builds optimized for performance, budget, and future-proofing.
+                </p>
+                
+                <!-- Call to action buttons - improved for small screens -->
+                <div class="flex flex-col xs:flex-col sm:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-0 sm:space-x-6 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20">
+                    <a href="{{ url_for('aibuild') }}" class="w-full xs:w-full sm:w-auto px-4 xs:px-6 sm:px-8 py-3 xs:py-3 sm:py-4 bg-gradient-to-r from-primary to-secondary rounded-xl font-semibold hover-glow transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1">
+                        Generate Build
+                    </a>
+                    <a href="{{ url_for('login') }}" class="w-full xs:w-full sm:w-auto px-4 xs:px-6 sm:px-8 py-3 xs:py-3 sm:py-4 bg-transparent border-2 border-primary text-primary rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:border-white hover:text-white">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Improved Responsive Footer -->
+    <footer class="mt-6 xs:mt-8 sm:mt-12 relative z-5">
+        <div class="mesh-gradient">
+            <div class="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 pt-4 xs:pt-5 pb-6 xs:pb-8 sm:pb-12">
+                <!-- Footer content - better grid for small devices -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xs:gap-8 sm:gap-12 mb-4">
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center mb-3 xs:mb-4 sm:mb-6">
+                            <div class="text-lg xs:text-xl sm:text-2xl font-extrabold">
+                                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>
+                                <span>MATCH</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-4 xs:mb-6 sm:mb-8 text-xs xs:text-sm sm:text-base leading-relaxed">Building the perfect PC for your specific needs has never been easier. Join thousands of satisfied builders.</p>
+                    </div>
+                </div>
+                
+                <!-- Copyright - better responsive layout -->
+                <div class="pt-4 xs:pt-6 sm:pt-8 border-t border-gray-800">
+                    <div class="flex flex-col xs:flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-500 text-xs xs:text-xs sm:text-sm mb-3 xs:mb-4 md:mb-0">
+                            © 2025 SPECMATCH. All rights reserved.
+                        </p>
+                        <div class="footer-links flex flex-col xs:flex-row space-y-2 xs:space-y-0 xs:space-x-4 sm:space-x-6">
+                            <a href="#" class="text-gray-500 hover:text-primary text-xs xs:text-xs sm:text-sm transition-colors duration-300">Privacy Policy</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-xs xs:text-xs sm:text-sm transition-colors duration-300">Terms of Service</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-xs xs:text-xs sm:text-sm transition-colors duration-300">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const menuItems = document.getElementById('menu-items');
+        
+        // Profile dropdown functionality
+        const profileButton = document.getElementById('profile-button');
+        const profileDropdown = document.getElementById('profile-dropdown');
+        const mobileProfileButton = document.getElementById('mobile-profile-button');
+        const mobileProfileDropdown = document.getElementById('mobile-profile-dropdown');
+        
+        // Desktop profile dropdown
+        if (profileButton && profileDropdown) {
+            profileButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                profileDropdown.classList.toggle('active');
+                // Close mobile menu if open
+                if (!menuItems.classList.contains('hidden')) {
+                    menuItems.classList.add('hidden');
+                }
+            });
+        }
+        
+        // Mobile profile dropdown
+        if (mobileProfileButton && mobileProfileDropdown) {
+            mobileProfileButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileProfileDropdown.classList.toggle('active');
+                // Close mobile menu if open
+                if (!menuItems.classList.contains('hidden')) {
+                    menuItems.classList.add('hidden');
+                }
+            });
+        }
+        
+        // Mobile menu functionality
+        mobileMenuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+            menuItems.classList.toggle('animate-fade-in');
+            // Close profile dropdowns if open
+            if (profileDropdown) profileDropdown.classList.remove('active');
+            if (mobileProfileDropdown) mobileProfileDropdown.classList.remove('active');
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (event) => {
+            // Close profile dropdowns
+            if (profileDropdown && !profileButton.contains(event.target) && !profileDropdown.contains(event.target)) {
+                profileDropdown.classList.remove('active');
+            }
+            if (mobileProfileDropdown && !mobileProfileButton.contains(event.target) && !mobileProfileDropdown.contains(event.target)) {
+                mobileProfileDropdown.classList.remove('active');
+            }
+            
+            // Close mobile menu
+            if (!mobileMenuButton.contains(event.target) && !menuItems.contains(event.target) && !menuItems.classList.contains('hidden')) {
+                menuItems.classList.add('hidden');
+            }
+        });
+        
+        // Fix mobile menu when resizing window
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                if (!menuItems.classList.contains('hidden')) {
+                    menuItems.classList.add('hidden');
+                }
+                if (profileDropdown) profileDropdown.classList.remove('active');
+                if (mobileProfileDropdown) mobileProfileDropdown.classList.remove('active');
+            }
+        });
+        
+        // Add this to ensure the site adjusts well on orientation change
+        window.addEventListener('orientationchange', () => {
+            // Small delay to allow the browser to complete the orientation change
+            setTimeout(() => {
+                if (window.innerWidth >= 768) {
+                    if (!menuItems.classList.contains('hidden')) {
+                        menuItems.classList.add('hidden');
+                    }
+                    if (profileDropdown) profileDropdown.classList.remove('active');
+                    if (mobileProfileDropdown) mobileProfileDropdown.classList.remove('active');
+                }
+            }, 100);
+        });
+    </script>
+</body>
+</html>

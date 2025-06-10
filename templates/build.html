@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Specification Recommendation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+       <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFAB2D', // Yellow/Gold
+                        secondary: '#FFB946', // Lighter gold
+                        accent: '#FFC761', // Lightest gold
+                        dark: '#1A2331', // Deep navy/black
+                        darker: '#131B27', // Even darker background
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #1A2331;
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(-45deg, #131B27, #1A2331, #1E283A, #232F41);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(19, 27, 39, 0.75);
+            border-bottom: 1px solid rgba(255, 171, 45, 0.12);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 171, 45, 0.7), 0 0 30px rgba(255, 171, 45, 0.5);
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 171, 45, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .mesh-gradient {
+            background-color: #131B27;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 171, 45, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 0%, rgba(255, 185, 70, 0.2) 0px, transparent 60%),
+                radial-gradient(at 0% 100%, rgba(255, 199, 97, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 100%, rgba(19, 27, 39, 0.4) 0px, transparent 60%);
+        }
+        
+        .nav-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, #FFAB2D, #FFB946);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .floating-slow {
+            animation: floating 8s ease-in-out infinite;
+        }
+        
+        .floating-fast {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 171, 45, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0); }
+        }
+        
+        .conic-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .conic-border::before {
+            content: "";
+            position: absolute;
+            inset: -5px;
+            background: conic-gradient(from 0deg, #FFAB2D, #FFB946, #FFC761, #131B27, #FFAB2D);
+            z-index: -2;
+            animation: rotate 4s linear infinite;
+        }
+        
+        .conic-border::after {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            background: #131B27;
+            border-radius: inherit;
+            z-index: -1;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 171, 45, 0.15) 0%, rgba(255, 185, 70, 0.15) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #FFAB2D, #FFB946);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .nav-dropdown {
+            transform: translateY(10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-dropdown.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        
+        /* Enhanced decorative particles */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .particle-1 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 16rem;
+            height: 16rem;
+            background-color: rgba(255, 171, 45, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-slow 8s ease-in-out infinite;
+        }
+        
+        .particle-2 {
+            position: absolute;
+            bottom: 20%;
+            left: 25%;
+            width: 24rem;
+            height: 24rem;
+            background-color: rgba(255, 185, 70, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        .particle-3 {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            width: 18rem;
+            height: 18rem;
+            background-color: rgba(255, 199, 97, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-fast 4s ease-in-out infinite;
+        }
+        
+        .particle-4 {
+            position: absolute;
+            bottom: 25%;
+            right: 25%;
+            width: 12rem;
+            height: 12rem;
+            background-color: rgba(19, 27, 39, 0.2);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-slow 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="animated-gradient text-white min-h-screen flex flex-col font-sans">
+    <!-- Enhanced decorative particles -->
+    <div class="particles">
+        <div class="particle-1"></div>
+        <div class="particle-2"></div>
+        <div class="particle-3"></div>
+        <div class="particle-4"></div>
+    </div>
+
+    <!-- Premium Standardized Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="{{ url_for('home') }}" class="flex items-center space-x-2 group">
+                    <div class="text-2xl font-extrabold transition-all duration-300 group-hover:scale-105">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>MATCH
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="{{ url_for('home') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        About
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center text-white hover:text-primary focus:outline-none transition-colors duration-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="menu-items" class="hidden md:hidden py-4 animate-fade-in">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Home
+                    </a>
+                    <a href="/component" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Components
+                    </a>
+                    <a href="/buildp" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Build
+                    </a>
+                    <a href="/about" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+            
+           
+    </header>
+    <!-- Main content -->
+    <main class="flex-grow relative z-10 pt-16 xs:pt-18 sm:pt-20 md:pt-24 p-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gradient mb-3">My Saved PC Builds</h1>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+            </div>
+
+            {% if builds %}
+                {% for build in builds %}
+                <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 backdrop-blur-sm mb-8">
+                    <div class="p-4 bg-gray-900/50 border-b border-gray-700">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-xl font-bold text-gradient">{{ build.name }}</h2>
+                            <span class="text-sm text-gray-400">Budget: ₹{{ build.budget }}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            {% for component in build.components %}
+                            <div class="space-y-4">
+                                <div class="bg-gray-800/70 p-4 rounded-lg border border-primary/50">
+                                    <div class="flex items-center mb-3">
+                                        {% if component.part == "processor" %}
+                                            <i class="fas fa-microchip text-blue-400 mr-2"></i>
+                                        {% elif component.part == "graphics card" %}
+                                            <i class="fas fa-gamepad text-purple-400 mr-2"></i>
+                                        {% elif component.part == "motherboard" %}
+                                            <i class="fas fa-server text-red-400 mr-2"></i>
+                                        {% elif component.part == "memory" %}
+                                            <i class="fas fa-memory text-green-400 mr-2"></i>
+                                        {% elif component.part == "storage" %}
+                                            <i class="fas fa-hdd text-yellow-400 mr-2"></i>
+                                        {% elif component.part == "case" %}
+                                            <i class="fas fa-box text-indigo-400 mr-2"></i>
+                                        {% elif component.part == "power supply" %}
+                                            <i class="fas fa-plug text-orange-400 mr-2"></i>
+                                        {% else %}
+                                            <i class="fas fa-question-circle text-gray-400 mr-2"></i>
+                                        {% endif %}
+                                        <h3 class="font-medium text-white">{{ component.part|title }}</h3>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between"><span class="text-gray-300">Name:</span><span class="font-medium text-white">{{ component.name }}</span></div>
+                                        <div class="flex justify-between"><span class="text-gray-300">Price:</span><span class="font-medium text-white">₹{{ component.price }}</span></div>
+                                        <div class="flex justify-between"><span class="text-gray-300">Performance Score:</span><span class="font-medium text-white">{{ component.performance_score }}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+                        <div class="mt-6 pt-4 border-t border-gray-700">
+                            <p class="text-center text-xl font-bold">Total cost: ₹{{ build.get_total_price() }}</p>
+                            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mt-4">
+                                <div>
+                                    <p class="text-gray-400 font-medium">Best for:</p>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span class="bg-blue-900/50 text-blue-300 text-xs font-medium px-3 py-1 rounded border border-blue-700">{{ build.use_case }}</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button onclick="deleteBuild('{{ build.id }}')" class="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                                        <i class="fas fa-trash mr-2"></i> Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-center py-12">
+                    <i class="fas fa-tools text-4xl text-gray-500 mb-4"></i>
+                    <h3 class="text-xl font-medium text-gray-400">No saved builds yet</h3>
+                    <p class="text-gray-500 mt-2">Start by creating a new build in the AI Builder</p>
+                    <a href="{{ url_for('aibuild') }}" class="inline-block mt-4 bg-gradient-to-r from-primary to-secondary text-white font-medium py-2 px-6 rounded-lg hover:opacity-90 transition duration-200">
+                        Go to AI Builder
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </main>
+
+    <!-- ... (keep existing footer) ... -->
+
+    <script>
+        // ... (keep existing mobile menu scripts) ...
+     
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const menuItems = document.getElementById('menu-items');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+            menuItems.classList.toggle('animate-fade-in');
+        });
+   
+
+        function deleteBuild(buildId) {
+            if (confirm('Are you sure you want to delete this build?')) {
+                fetch(`/delete-build/${buildId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token() }}'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert('Error deleting build: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while deleting the build');
+                });
+            }
+        }
+    </script>
+</body>
+</html>

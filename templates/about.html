@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SpecMatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFAB2D', // Yellow/Gold
+                        secondary: '#FFB946', // Lighter gold
+                        accent: '#FFC761', // Lightest gold
+                        dark: '#1A2331', // Deep navy/black
+                        darker: '#131B27', // Even darker background
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #1A2331;
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(-45deg, #131B27, #1A2331, #1E283A, #232F41);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(19, 27, 39, 0.75);
+            border-bottom: 1px solid rgba(255, 171, 45, 0.12);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 171, 45, 0.7), 0 0 30px rgba(255, 171, 45, 0.5);
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 171, 45, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .mesh-gradient {
+            background-color: #131B27;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 171, 45, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 0%, rgba(255, 185, 70, 0.2) 0px, transparent 60%),
+                radial-gradient(at 0% 100%, rgba(255, 199, 97, 0.2) 0px, transparent 60%),
+                radial-gradient(at 100% 100%, rgba(19, 27, 39, 0.4) 0px, transparent 60%);
+        }
+        
+        .nav-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, #FFAB2D, #FFB946);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .floating-slow {
+            animation: floating 8s ease-in-out infinite;
+        }
+        
+        .floating-fast {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 171, 45, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 171, 45, 0); }
+        }
+        
+        .conic-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .conic-border::before {
+            content: "";
+            position: absolute;
+            inset: -5px;
+            background: conic-gradient(from 0deg, #FFAB2D, #FFB946, #FFC761, #131B27, #FFAB2D);
+            z-index: -2;
+            animation: rotate 4s linear infinite;
+        }
+        
+        .conic-border::after {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            background: #131B27;
+            border-radius: inherit;
+            z-index: -1;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 171, 45, 0.15) 0%, rgba(255, 185, 70, 0.15) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #FFAB2D, #FFB946);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .nav-dropdown {
+            transform: translateY(10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-dropdown.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        
+        /* Enhanced decorative particles */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .particle-1 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 16rem;
+            height: 16rem;
+            background-color: rgba(255, 171, 45, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-slow 8s ease-in-out infinite;
+        }
+        
+        .particle-2 {
+            position: absolute;
+            bottom: 20%;
+            left: 25%;
+            width: 24rem;
+            height: 24rem;
+            background-color: rgba(255, 185, 70, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        .particle-3 {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            width: 18rem;
+            height: 18rem;
+            background-color: rgba(255, 199, 97, 0.15);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-fast 4s ease-in-out infinite;
+        }
+        
+        .particle-4 {
+            position: absolute;
+            bottom: 25%;
+            right: 25%;
+            width: 12rem;
+            height: 12rem;
+            background-color: rgba(19, 27, 39, 0.2);
+            border-radius: 50%;
+            filter: blur(3rem);
+            animation: floating-slow 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="animated-gradient text-white min-h-screen flex flex-col font-sans">
+    <!-- Enhanced decorative particles -->
+    <div class="particles">
+        <div class="particle-1"></div>
+        <div class="particle-2"></div>
+        <div class="particle-3"></div>
+        <div class="particle-4"></div>
+    </div>
+
+    <!-- Premium Standardized Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="{{ url_for('home') }}" class="flex items-center space-x-2 group">
+                    <div class="text-2xl font-extrabold transition-all duration-300 group-hover:scale-105">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>MATCH
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="{{ url_for('home') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Home
+                    </a>
+                    <a href="{{ url_for('component') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Components
+                    </a>
+                    <a href="{{ url_for('buildp') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        Build
+                    </a>
+                    <a href="{{ url_for('about') }}" class="nav-item text-white hover:text-primary font-medium transition-colors duration-300 py-2 px-1">
+                        About
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center text-white hover:text-primary focus:outline-none transition-colors duration-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="menu-items" class="hidden md:hidden py-4 animate-fade-in">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Home
+                    </a>
+                    <a href="/component" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Components
+                    </a>
+                    <a href="/buildp" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        Build
+                    </a>
+                    <a href="/about" class="text-white hover:text-primary font-medium transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="flex-grow relative z-10 pt-16 pb-5">
+        <div class="container mx-auto px-6 py-12 max-w-7xl">
+            <section class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-gradient">About Us</h1>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    SpecMatch is an AI-powered PC build recommender that helps you find the best components for your budget and needs. 
+                    Whether you're a gamer, content creator, or professional, we ensure you get the perfect build for optimal performance.
+                </p>
+            </section>
+            
+            <section class="grid md:grid-cols-3 gap-8">
+                <div class="bg-darker p-8 rounded-xl shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-800/50">
+                    <h2 class="text-2xl font-bold text-primary mb-4">Smart AI Recommendations</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Our AI analyzes thousands of builds to suggest the most efficient and cost-effective configurations.
+                    </p>
+                </div>
+                <div class="bg-darker p-8 rounded-xl shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-800/50">
+                    <h2 class="text-2xl font-bold text-primary mb-4">Budget Optimization</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Enter your budget, and we'll maximize performance without overspending.
+                    </p>
+                </div>
+                <div class="bg-darker p-8 rounded-xl shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-800/50">
+                    <h2 class="text-2xl font-bold text-primary mb-4">User-Friendly Experience</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Get instant recommendations in an easy-to-understand format.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Premium Footer -->
+    <footer class="mt-12 relative z-5">
+        <div class="mesh-gradient">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-5 pb-12">
+                <!-- Footer content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-4">
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center mb-6">
+                            <div class="text-2xl font-extrabold">
+                                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SPEC</span>
+                                <span>MATCH</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-8 leading-relaxed">Building the perfect PC for your specific needs has never been easier. Join thousands of satisfied builders.</p>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="pt-8 border-t border-gray-800">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                            © 2025 SPECMATCH. All rights reserved.
+                        </p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Privacy Policy</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Terms of Service</a>
+                            <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const menuItems = document.getElementById('menu-items');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+            menuItems.classList.toggle('animate-fade-in');
+        });
+    </script>
+</body>
+</html>

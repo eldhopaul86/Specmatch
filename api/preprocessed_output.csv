@@ -1,0 +1,727 @@
+part,name,price,performance_score,description,clock_speed,vram,core,watt,ram_type,socket,capacity,s_type,productivity,3d_rendering,content_creation,editing,gaming,workstation,general,office,rendering,laptop,office/productivity
+gpu,NVIDIA GeForce RTX 4090,209999,100,"The ultimate GPU for gaming and content creation, featuring 24GB of GDDR6X memory and DLSS 3.",2520,24,16384,450,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7900 XTX,109999,95,"High-performance GPU with 24GB GDDR6 memory, ideal for gaming and professional workloads.",2500,24,6144,355,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3060,35999,75,"A great mid-range GPU for gaming and productivity, featuring 12GB of GDDR6 memory.",1777,12,3584,170,GDDR6,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,AMD Radeon RX 6600,27999,70,"A budget-friendly GPU for 1080p gaming and general use, with 8GB GDDR6 memory.",2491,8,1792,132,GDDR6,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA Quadro RTX 5000,189999,90,"Professional-grade GPU designed for content creation, 3D rendering, and complex simulations.",1620,16,3072,265,GDDR6,,,,1,1,1,1,0,0,0,0,0,0,0
+gpu,Intel Arc A750,29999,65,"Intel's entry into the GPU market, offering solid performance for gaming and general use.",2050,8,3584,225,GDDR6,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA GeForce GTX 1650,15999,50,"An affordable GPU for casual gaming and everyday tasks, with 4GB GDDR5 memory.",1665,4,896,75,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,AMD Radeon RX 6400,14999,45,A low-profile GPU suitable for light gaming and general computing tasks.,2039,4,768,53,GDDR6,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA T1000,49999,60,"A professional GPU for productivity and light content creation, with 8GB GDDR6 memory.",1395,8,896,50,GDDR6,,,,1,0,0,0,0,0,1,1,0,0,0
+gpu,AMD Radeon Pro W6800,249999,92,"A workstation GPU designed for professionals in 3D rendering, video editing, and more.",2325,32,3840,250,GDDR6,,,,1,1,1,1,0,0,0,0,0,0,0
+gpu,NVIDIA GeForce GT 1030,6999,30,Entry-level GPU for basic tasks and light gaming.,1468,2,384,30,GDDR5,,,,0,0,0,0,0,0,1,1,0,0,0
+gpu,AMD Radeon RX 550,7999,35,Budget GPU for casual gaming and multimedia tasks.,1183,4,512,50,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA GeForce GTX 1050 Ti,12999,55,Affordable GPU for 1080p gaming and light productivity.,1392,4,768,75,GDDR5,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 580,17999,65,Mid-range GPU for 1080p gaming and content creation.,1340,8,2304,185,GDDR5,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce GTX 1650 Super,19999,70,Great for 1080p gaming and light editing tasks.,1725,4,1280,100,GDDR6,,,,0,0,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 5600 XT,27999,80,High-performance GPU for 1440p gaming and content creation.,1750,6,2304,150,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 2060,32999,85,Excellent for 1440p gaming and ray tracing.,1680,6,1920,160,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6700 XT,45999,90,High-end GPU for 1440p and 4K gaming.,2424,12,2560,230,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3060 Ti,49999,92,Powerful GPU for 1440p gaming and productivity.,1665,8,4864,200,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6800,64999,94,High-performance GPU for 4K gaming and content creation.,2105,16,3840,250,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3070,69999,95,Top-tier GPU for 4K gaming and professional workloads.,1725,8,5888,220,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6900 XT,89999,97,Flagship GPU for 4K gaming and heavy content creation.,2250,16,5120,300,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3080,99999,98,High-end GPU for 4K gaming and professional workloads.,1710,10,8704,320,GDDR6X,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3090,149999,99,Ultimate GPU for 8K gaming and extreme content creation.,1695,24,10496,350,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6950 XT,109999,98,Flagship GPU for 4K gaming and heavy workloads.,2310,16,5120,335,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4070,79999,96,High-performance GPU for 1440p and 4K gaming.,2475,12,5888,200,GDDR6X,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7800 XT,74999,95,High-end GPU for 1440p and 4K gaming.,2430,16,3840,263,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4060 Ti,54999,90,Great for 1440p gaming and productivity.,2535,8,4352,160,GDDR6,,,,0,0,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7600,34999,85,Mid-range GPU for 1080p and 1440p gaming.,2655,8,2048,165,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,NVIDIA GeForce RTX 3050,24999,75,Entry-level GPU for 1080p gaming and productivity.,1777,8,2560,130,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 6500 XT,19999,60,Budget GPU for 1080p gaming and light tasks.,2815,4,1024,107,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,NVIDIA GeForce GTX 1660 Super,22999,70,Solid GPU for 1080p gaming and productivity.,1785,6,1408,125,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 5700,37999,85,High-performance GPU for 1440p gaming.,1725,8,2304,180,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 2080 Ti,89999,93,Previous-gen flagship GPU for 4K gaming.,1545,11,4352,260,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6600 XT,39999,88,Great for 1080p and 1440p gaming.,2359,8,2048,160,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 2070 Super,49999,89,High-performance GPU for 1440p gaming.,1770,8,2560,215,GDDR6,,,,0,0,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6800 XT,79999,96,Flagship GPU for 4K gaming and content creation.,2250,16,4608,300,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3060,35999,85,Great for 1080p and 1440p gaming.,1777,12,3584,170,GDDR6,,,,0,0,0,1,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6700,49999,90,High-performance GPU for 1440p gaming.,2424,10,2304,220,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce GT 710,3499,20,Entry-level GPU for basic tasks and multimedia.,954,2,192,19,GDDR5,,,,0,0,0,0,0,0,1,1,0,0,0
+gpu,AMD Radeon R5 230,2999,15,Basic GPU for everyday computing tasks.,625,1,160,18,GDDR3,,,,0,0,0,0,0,0,1,1,0,0,0
+gpu,NVIDIA GeForce GT 1030 (DDR4),5999,30,Budget GPU for light gaming and multimedia tasks.,1227,2,384,30,GDDR4,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,AMD Radeon HD 5450,3499,10,Basic GPU for office work and multimedia.,650,1,80,19,GDDR3,,,,0,0,0,0,0,0,1,1,0,0,0
+gpu,NVIDIA GeForce GT 730 (GDDR5),6999,35,Entry-level GPU for light gaming and general use.,902,2,384,38,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,AMD Radeon R7 240,4999,25,Budget GPU for casual gaming and multimedia.,780,2,320,30,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA GeForce GT 720,3999,22,Basic GPU for office tasks and light multimedia.,797,1,192,19,GDDR3,,,,0,0,0,0,0,0,1,1,0,0,0
+gpu,AMD Radeon HD 7750,6499,40,Budget GPU for light gaming and general use.,800,1,512,55,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA GeForce GT 740,6999,45,Entry-level GPU for casual gaming and multimedia.,993,2,384,64,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,AMD Radeon R5 340X,5999,35,Budget GPU for light gaming and general tasks.,780,2,320,50,GDDR5,,,,0,0,0,0,1,0,1,1,0,0,0
+gpu,NVIDIA GeForce GTX 1650,15999,60,Great for 1080p gaming and light productivity tasks.,1665,4,896,75,GDDR5,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 5500 XT,18999,70,Solid GPU for 1080p gaming and light content creation.,1845,8,1408,130,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce GTX 1050 Ti,12999,55,Affordable GPU for 1080p gaming and general use.,1392,4,768,75,GDDR5,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 580,17999,75,Excellent for 1080p gaming and light content creation.,1340,8,2304,185,GDDR5,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce GTX 1060 3GB,14999,65,Good for 1080p gaming and general productivity.,1708,3,1152,120,GDDR5,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 570,13999,68,Great for 1080p gaming and light editing tasks.,1244,4,2048,150,GDDR5,,,,0,0,0,1,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce GTX 1650 Super,19999,75,Excellent for 1080p gaming and light productivity.,1725,4,1280,100,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 6500 XT,17999,70,Budget GPU for 1080p gaming and light tasks.,2815,4,1024,107,GDDR6,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,NVIDIA GeForce GTX 1660,19999,70,Great for 1080p gaming and productivity.,1785,6,1408,120,GDDR5,,,,0,0,0,0,1,0,1,0,0,0,0
+gpu,AMD Radeon RX 5600 XT,19999,85,High-performance GPU for 1080p and 1440p gaming.,1750,6,2304,150,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4090,209999,100,"The ultimate GPU for gaming and content creation, featuring 24GB of GDDR6X memory and DLSS 3.",2520,24,16384,450,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7900 XTX,109999,98,"High-performance GPU with 24GB GDDR6 memory, ideal for gaming and professional workloads.",2500,24,6144,355,GDDR6,,,,0,1,0,1,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4080,159999,97,"High-end GPU for 4K gaming and professional workloads, featuring 16GB GDDR6X memory.",2505,16,9728,320,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6950 XT,109999,96,"Flagship GPU for 4K gaming and heavy workloads, featuring 16GB GDDR6 memory.",2310,16,5120,335,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3090 Ti,189999,99,"Extreme-performance GPU for 8K gaming and professional workloads, featuring 24GB GDDR6X memory.",1860,24,10752,450,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6800 XT,79999,95,"High-performance GPU for 4K gaming and content creation, featuring 16GB GDDR6 memory.",2250,16,4608,300,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4070 Ti,89999,94,"High-end GPU for 1440p and 4K gaming, featuring 12GB GDDR6X memory.",2610,12,7680,285,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7800 XT,74999,93,"High-performance GPU for 1440p and 4K gaming, featuring 16GB GDDR6 memory.",2430,16,3840,263,GDDR6,,,,0,0,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3080 Ti,129999,98,"High-end GPU for 4K gaming and professional workloads, featuring 12GB GDDR6X memory.",1665,12,10240,350,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6900 XT,89999,97,"Flagship GPU for 4K gaming and heavy content creation, featuring 16GB GDDR6 memory.",2250,16,5120,300,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3060,35999,85,"A versatile GPU for 1080p and 1440p gaming, content creation, and productivity.",1777,12,3584,170,GDDR6,,,,1,0,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6700 XT,45999,90,"High-performance GPU for 1440p gaming, content creation, and 3D rendering.",2424,12,2560,230,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3070,69999,95,"Excellent for 1440p gaming, content creation, and productivity tasks.",1725,8,5888,220,GDDR6,,,,1,0,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6800,64999,94,"Great for 1440p and 4K gaming, content creation, and 3D rendering.",2105,16,3840,250,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 3060 Ti,49999,92,"Powerful GPU for 1440p gaming, content creation, and productivity.",1665,8,4864,200,GDDR6,,,,1,0,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6600 XT,39999,88,"Great for 1080p and 1440p gaming, content creation, and general use.",2359,8,2048,160,GDDR6,,,,0,0,1,0,1,0,1,0,0,0,0
+gpu,NVIDIA GeForce RTX 3080,99999,98,"High-end GPU for 4K gaming, content creation, and 3D rendering.",1710,10,8704,320,GDDR6X,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 6900 XT,89999,97,"Flagship GPU for 4K gaming, content creation, and 3D rendering.",2250,16,5120,300,GDDR6,,,,0,1,1,0,1,0,0,0,0,0,0
+gpu,NVIDIA GeForce RTX 4070,79999,96,"High-performance GPU for 1440p and 4K gaming, content creation, and productivity.",2475,12,5888,200,GDDR6X,,,,1,0,1,0,1,0,0,0,0,0,0
+gpu,AMD Radeon RX 7800 XT,74999,95,"High-performance GPU for 1440p and 4K gaming, content creation, and general use.",2430,16,3840,263,GDDR6,,,,0,0,1,0,1,0,1,0,0,0,0
+ram,Corsair Vengeance LPX 16GB (2 x 8GB) DDR4 DRAM 3200MHz C16,6500,85,"Designed for high-performance overclocking, the Vengeance LPX is optimized for wide compatibility with the latest Intel and AMD DDR4 motherboards.",3200,,,,DDR4,,16,,0,0,1,1,1,0,0,0,0,0,0
+ram,G.Skill Trident Z RGB 32GB (2 x 16GB) 288-Pin SDRAM PC4-28800 DDR4 3600MHz,17500,90,"Designed for maximum performance, the Trident Z RGB series combines vibrant RGB lighting with memory kits of various capacities and frequencies.",3600,,,,DDR4,,32,,1,1,0,0,1,0,0,0,0,0,0
+ram,Kingston HyperX Fury 8GB 2400MHz DDR4 CL15 DIMM,3500,70,"Automatic overclocking to the highest frequency published, reliable and stylish heat spreader.",2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Crucial Ballistix 16GB Kit (8GBx2) DDR4 3000 MT/s,7000,80,"Designed for gamers, performance enthusiasts, and overclockers, Ballistix Sport LT memory delivers peak performance in the heat of battle.",3000,,,,DDR4,,16,,0,0,1,1,1,0,0,0,0,0,0
+ram,ADATA XPG Spectrix D41 RGB 8GB (1 x 8GB) 288-Pin DDR4 3000 (PC4 24000),4000,75,The XPG Spectrix D41 is a DDR4 RGB memory module designed for gamers and PC enthusiasts who want to add a touch of style to their gaming rig.,3000,,,,DDR4,,8,,0,0,0,0,1,0,1,0,0,0,0
+ram,Crucial 8GB Single DDR4 2400 MT/s,2500,65,Basic DDR4 RAM suitable for everyday computing tasks.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Kingston ValueRAM 8GB DDR4 2666MHz,2700,68,Affordable DDR4 RAM for general use and office applications.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,ADATA Premier 8GB DDR4 2666MHz,2600,67,Cost-effective DDR4 RAM for everyday computing needs.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,G.Skill Aegis 8GB DDR4 3000MHz,3000,70,Entry-level DDR4 RAM with decent performance for budget builds.,3000,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Team Elite 8GB DDR4 2400MHz,2400,64,Budget-friendly DDR4 RAM for basic computing tasks.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Corsair ValueSelect 8GB DDR4 2133MHz,2300,62,Affordable DDR4 RAM for entry-level systems.,2133,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Patriot Signature Line 8GB DDR4 2400MHz,2500,65,Basic DDR4 RAM for everyday computing needs.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Transcend 8GB DDR4 2666MHz,2600,66,Reliable DDR4 RAM for general-purpose computing.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Hynix 8GB DDR4 2400MHz,2400,63,Basic DDR4 RAM for budget systems.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Micron 8GB DDR4 2666MHz,2500,65,Affordable DDR4 RAM for everyday use.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Samsung 8GB DDR4 2400MHz,2600,66,Reliable DDR4 RAM for general computing tasks.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,PNY 8GB DDR4 2666MHz,2700,67,Budget-friendly DDR4 RAM for everyday use.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,GeIL 8GB DDR4 2400MHz,2500,65,Affordable DDR4 RAM for basic computing needs.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Apacer 8GB DDR4 2666MHz,2600,66,Budget DDR4 RAM for general-purpose computing.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Silicon Power 8GB DDR4 2400MHz,2400,64,Affordable DDR4 RAM for entry-level systems.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Corsair Vengeance LPX 16GB (2 x 8GB) DDR4 3200MHz,6500,85,High-performance DDR4 RAM optimized for gaming and content creation.,3200,,,,DDR4,,16,,0,0,1,1,1,0,0,0,0,0,0
+ram,G.Skill Ripjaws V 32GB (2 x 16GB) DDR4 3600MHz,14000,92,"High-capacity DDR4 RAM designed for gaming, 3D rendering, and productivity.",3600,,,,DDR4,,32,,1,1,0,0,1,0,0,0,0,0,0
+ram,Crucial Ballistix 32GB (2 x 16GB) DDR4 3000MHz,12000,88,High-performance DDR4 RAM for gaming and multitasking.,3000,,,,DDR4,,32,,1,0,0,1,1,0,0,0,0,0,0
+ram,ADATA XPG Spectrix D50 16GB (2 x 8GB) DDR4 3200MHz,7000,84,RGB-enabled DDR4 RAM for gaming and content creation.,3200,,,,DDR4,,16,,0,0,1,0,1,0,0,0,0,0,0
+ram,Kingston HyperX Fury 32GB (2 x 16GB) DDR4 2666MHz,11000,82,High-capacity DDR4 RAM for multitasking and productivity.,2666,,,,DDR4,,32,,1,0,0,1,0,0,1,0,0,0,0
+ram,Team T-Force Delta RGB 16GB (2 x 8GB) DDR4 3000MHz,6800,83,RGB DDR4 RAM for gaming and general use.,3000,,,,DDR4,,16,,0,0,0,0,1,0,1,0,0,0,0
+ram,Patriot Viper Steel 64GB (2 x 32GB) DDR4 3600MHz,28000,95,High-capacity DDR4 RAM for extreme multitasking and professional workloads.,3600,,,,DDR4,,64,,1,1,1,0,0,0,0,0,0,0,0
+ram,G.Skill Trident Z Neo 32GB (2 x 16GB) DDR4 3600MHz,16000,93,High-performance DDR4 RAM optimized for AMD Ryzen systems.,3600,,,,DDR4,,32,,0,1,0,1,1,0,0,0,0,0,0
+ram,Corsair Dominator Platinum RGB 64GB (2 x 32GB) DDR4 3200MHz,35000,96,Premium DDR4 RAM for enthusiasts and professionals.,3200,,,,DDR4,,64,,1,1,1,0,0,0,0,0,0,0,0
+ram,ADATA XPG Gammix D10 8GB DDR4 3000MHz,3000,72,Budget DDR4 RAM for gaming and general use.,3000,,,,DDR4,,8,,0,0,0,0,1,0,1,0,0,0,0
+ram,Crucial 16GB DDR4 2400MHz,5000,75,Affordable DDR4 RAM for everyday computing.,2400,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Kingston ValueRAM 32GB DDR4 2666MHz,10000,80,Cost-effective DDR4 RAM for multitasking and productivity.,2666,,,,DDR4,,32,,1,0,0,0,0,0,1,0,0,0,0
+ram,G.Skill Aegis 16GB DDR4 3000MHz,5500,78,Budget-friendly DDR4 RAM for gaming and general use.,3000,,,,DDR4,,16,,0,0,0,0,1,0,1,0,0,0,0
+ram,Team T-Force Vulcan Z 32GB (2 x 16GB) DDR4 3200MHz,11000,86,High-performance DDR4 RAM for gaming and multitasking.,3200,,,,DDR4,,32,,1,0,0,0,1,0,0,0,0,0,0
+ram,OLOy 64GB (2 x 32GB) DDR4 3600MHz,26000,94,High-capacity DDR4 RAM for professional workloads.,3600,,,,DDR4,,64,,1,1,1,0,0,0,0,0,0,0,0
+ram,G.Skill Trident Z Royal 64GB (2 x 32GB) DDR4 4000MHz,45000,98,Premium DDR4 RAM with stunning design and extreme performance for enthusiasts.,4000,,,,DDR4,,64,,1,1,1,0,0,0,0,0,0,0,0
+ram,Corsair Vengeance RGB Pro 128GB (4 x 32GB) DDR4 3200MHz,90000,97,High-capacity DDR4 RAM with RGB lighting for professional workloads.,3200,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,Patriot Viper Steel 64GB (2 x 32GB) DDR4 4400MHz,50000,99,Extreme-performance DDR4 RAM for gaming and professional applications.,4400,,,,DDR4,,64,,0,1,1,0,1,0,0,0,0,0,0
+ram,G.Skill Ripjaws V 128GB (4 x 32GB) DDR4 3600MHz,85000,96,High-capacity DDR4 RAM for intensive multitasking and professional workloads.,3600,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,Corsair Dominator Platinum RGB 128GB (4 x 32GB) DDR4 3600MHz,120000,99,Top-tier DDR4 RAM for extreme performance and professional use.,3600,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,Team T-Force Xtreem ARGB 64GB (2 x 32GB) DDR4 4000MHz,48000,97,High-performance DDR4 RAM with ARGB lighting for gaming and professional use.,4000,,,,DDR4,,64,,0,1,1,0,1,0,0,0,0,0,0
+ram,ADATA XPG Spectrix D80 64GB (2 x 32GB) DDR4 4133MHz,52000,98,Liquid-cooled DDR4 RAM for extreme performance and overclocking.,4133,,,,DDR4,,64,,0,1,1,0,1,0,0,0,0,0,0
+ram,Kingston HyperX Predator 128GB (4 x 32GB) DDR4 3200MHz,88000,96,High-capacity DDR4 RAM for professional workloads and multitasking.,3200,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,OLOy 128GB (4 x 32GB) DDR4 3600MHz,82000,95,High-capacity DDR4 RAM for professional and creative workloads.,3600,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,G.Skill Trident Z Neo 128GB (4 x 32GB) DDR4 3600MHz,95000,98,High-performance DDR4 RAM optimized for AMD Ryzen systems.,3600,,,,DDR4,,128,,1,1,1,0,0,0,0,0,0,0,0
+ram,Corsair Vengeance RGB Pro SL 32GB (2 x 16GB) DDR4 3600MHz,15000,94,Sleek RGB DDR4 RAM optimized for gaming and multitasking.,3600,,,,DDR4,,32,,1,0,1,0,1,0,0,0,0,0,0
+ram,G.Skill Trident Z RGB 16GB (2 x 8GB) DDR4 3200MHz,8000,90,RGB DDR4 RAM designed for gaming and general use.,3200,,,,DDR4,,16,,0,0,0,0,1,0,1,1,0,0,0
+ram,Team T-Force Delta RGB 32GB (2 x 16GB) DDR4 3600MHz,14000,93,RGB DDR4 RAM for gaming and content creation.,3600,,,,DDR4,,32,,1,0,1,0,1,0,0,0,0,0,0
+ram,ADATA XPG Spectrix D60G 16GB (2 x 8GB) DDR4 4133MHz,10000,95,High-speed RGB DDR4 RAM for gaming and overclocking.,4133,,,,DDR4,,16,,0,1,1,0,1,0,0,0,0,0,0
+ram,Kingston HyperX Fury RGB 32GB (2 x 16GB) DDR4 3200MHz,13000,91,RGB DDR4 RAM for gaming and multitasking.,3200,,,,DDR4,,32,,1,0,0,0,1,0,1,0,0,0,0
+ram,G.Skill Ripjaws V 16GB (2 x 8GB) DDR4 3600MHz,7500,89,High-performance DDR4 RAM for gaming and general use.,3600,,,,DDR4,,16,,0,0,0,0,1,0,1,1,0,0,0
+ram,Corsair Dominator Platinum RGB 32GB (2 x 16GB) DDR4 4000MHz,22000,97,Premium DDR4 RAM for gaming and professional workloads.,4000,,,,DDR4,,32,,0,1,1,0,1,0,0,0,0,0,0
+ram,Patriot Viper Steel 16GB (2 x 8GB) DDR4 4400MHz,9000,96,High-speed DDR4 RAM for gaming and overclocking.,4400,,,,DDR4,,16,,0,1,1,0,1,0,0,0,0,0,0
+ram,OLOy WarHawk RGB 32GB (2 x 16GB) DDR4 3600MHz,12000,92,RGB DDR4 RAM for gaming and multitasking.,3600,,,,DDR4,,32,,1,0,0,0,1,0,1,0,0,0,0
+ram,GeIL Super Luce RGB 16GB (2 x 8GB) DDR4 3200MHz,7000,88,RGB DDR4 RAM for gaming and general use.,3200,,,,DDR4,,16,,0,0,0,0,1,0,1,1,0,0,0
+ram,Crucial 8GB DDR4 2400MHz,2500,65,Basic DDR4 RAM for everyday computing tasks.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Kingston ValueRAM 8GB DDR4 2666MHz,2700,68,Affordable DDR4 RAM for general use and office applications.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,ADATA Premier 8GB DDR4 2666MHz,2600,67,Cost-effective DDR4 RAM for everyday computing needs.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,G.Skill Aegis 8GB DDR4 3000MHz,3000,70,Entry-level DDR4 RAM with decent performance for budget builds.,3000,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Team Elite 8GB DDR4 2400MHz,2400,64,Budget-friendly DDR4 RAM for basic computing tasks.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Corsair ValueSelect 8GB DDR4 2133MHz,2300,62,Affordable DDR4 RAM for entry-level systems.,2133,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Patriot Signature Line 8GB DDR4 2400MHz,2500,65,Basic DDR4 RAM for everyday computing needs.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Transcend 8GB DDR4 2666MHz,2600,66,Reliable DDR4 RAM for general-purpose computing.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Hynix 8GB DDR4 2400MHz,2400,63,Basic DDR4 RAM for budget systems.,2400,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Micron 8GB DDR4 2666MHz,2500,65,Affordable DDR4 RAM for everyday use.,2666,,,,DDR4,,8,,0,0,0,0,0,0,1,1,0,0,0
+ram,Crucial 16GB DDR4 2400MHz,5000,75,Affordable DDR4 RAM for everyday computing.,2400,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Kingston ValueRAM 16GB DDR4 2666MHz,5200,76,Cost-effective DDR4 RAM for multitasking and productivity.,2666,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,ADATA Premier 16GB DDR4 2666MHz,5100,75,Budget-friendly DDR4 RAM for general-purpose computing.,2666,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,G.Skill Aegis 16GB DDR4 3000MHz,5500,78,Budget-friendly DDR4 RAM for gaming and general use.,3000,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Team Elite 16GB DDR4 2400MHz,4800,74,Affordable DDR4 RAM for basic computing tasks.,2400,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Corsair ValueSelect 16GB DDR4 2133MHz,4700,73,Affordable DDR4 RAM for entry-level systems.,2133,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Patriot Signature Line 16GB DDR4 2400MHz,4900,74,Basic DDR4 RAM for everyday computing needs.,2400,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Transcend 16GB DDR4 2666MHz,5000,75,Reliable DDR4 RAM for general-purpose computing.,2666,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Hynix 16GB DDR4 2400MHz,4800,73,Basic DDR4 RAM for budget systems.,2400,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,Micron 16GB DDR4 2666MHz,4900,74,Affordable DDR4 RAM for everyday use.,2666,,,,DDR4,,16,,0,0,0,0,0,0,1,1,0,0,0
+ram,ADATA XPG Gammix D10 8GB DDR4 3000MHz,3000,72,Budget DDR4 RAM for gaming and general use.,3000,,,,DDR4,,8,,0,0,0,0,1,0,1,0,0,0,0
+ram,G.Skill Ripjaws V 16GB (2 x 8GB) DDR4 3200MHz,6000,85,Affordable DDR4 RAM for gaming and multitasking.,3200,,,,DDR4,,16,,1,0,0,0,1,0,0,0,0,0,0
+ram,Team T-Force Vulcan Z 16GB (2 x 8GB) DDR4 3000MHz,5500,82,Budget-friendly DDR4 RAM for gaming and general use.,3000,,,,DDR4,,16,,0,0,0,0,1,0,1,0,0,0,0
+ram,Corsair Vengeance LPX 8GB DDR4 2400MHz,2800,70,Entry-level DDR4 RAM for gaming and everyday use.,2400,,,,DDR4,,8,,0,0,0,0,1,0,1,0,0,0,0
+ram,Patriot Viper 4 16GB (2 x 8GB) DDR4 3000MHz,5800,83,Affordable DDR4 RAM for gaming and multitasking.,3000,,,,DDR4,,16,,1,0,0,0,1,0,0,0,0,0,0
+ram,G.Skill Trident Z Neo 32GB (2 x 16GB) DDR4 3600MHz,16000,95,High-performance DDR4 RAM optimized for gaming and content creation.,3600,,,,DDR4,,32,,0,1,1,0,1,0,0,0,0,0,0
+ram,Corsair Dominator Platinum RGB 32GB (2 x 16GB) DDR4 4000MHz,22000,97,Premium DDR4 RAM for gaming and professional workloads.,4000,,,,DDR4,,32,,0,1,1,0,1,0,0,0,0,0,0
+ram,ADATA XPG Spectrix D80 16GB (2 x 8GB) DDR4 4133MHz,10000,94,Liquid-cooled DDR4 RAM for extreme gaming performance.,4133,,,,DDR4,,16,,0,0,1,0,1,0,0,0,0,0,0
+ram,G.Skill Ripjaws V 64GB (2 x 32GB) DDR4 3600MHz,28000,98,High-capacity DDR4 RAM for gaming and professional workloads.,3600,,,,DDR4,,64,,0,1,1,0,1,0,0,0,0,0,0
+ram,Patriot Viper Steel 32GB (2 x 16GB) DDR4 4400MHz,18000,96,High-speed DDR4 RAM for gaming and overclocking.,4400,,,,DDR4,,32,,0,1,1,0,1,0,0,0,0,0,0
+case,Antec P101 ATX Mid Tower Gaming Cabinet,9342,,"A mid-tower gaming cabinet designed for optimal airflow and noise reduction, featuring a minimalist design and ample space for high-end components.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Corsair iCUE 4000X RGB Mid-Tower Case,8999,,"A stylish mid-tower case with tempered glass panels and RGB lighting, designed for excellent airflow and easy cable management.",,,,,,,,,0,0,1,0,1,0,1,0,0,0,0
+case,NZXT H510 Compact ATX Mid-Tower Case,7499,,"A compact mid-tower case with a modern design, featuring a tempered glass side panel and a front panel USB-C connector.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,Cooler Master MasterBox MB511 RGB ATX Mid-Tower Case,6899,,"A mid-tower case with a mesh front panel for optimal airflow, featuring RGB lighting and support for multiple cooling options.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Lian Li Lancool II Mesh RGB Mid-Tower Case,10999,,"A high-performance mid-tower case with a mesh front panel for superior airflow, featuring RGB lighting and a modular design.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Fractal Design Meshify C ATX Mid-Tower Case,8499,,"A mid-tower case with a unique angular mesh front panel, designed for excellent airflow and a sleek, modern look.",,,,,,,,,1,0,1,0,1,0,0,0,0,0,0
+case,Phanteks Eclipse P400A ATX Mid-Tower Case,7999,,"A mid-tower case with a mesh front panel for optimal airflow, featuring RGB lighting and a tempered glass side panel.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,Thermaltake Core P3 ATX Mid-Tower Case,11999,,"An open-frame mid-tower case designed for showcasing high-end components, featuring a tempered glass panel and support for custom liquid cooling.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Deepcool MATREXX 55 MESH ADD-RGB 4F ATX Mid-Tower Case,6499,,"A mid-tower case with a mesh front panel and RGB lighting, designed for optimal airflow and a stylish look.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,SilverStone FARA R1 ATX Mid-Tower Case,5999,,"A compact mid-tower case with a minimalist design, featuring a mesh front panel for improved airflow and a tempered glass side panel.",,,,,,,,,1,0,0,0,0,0,1,1,0,0,0
+case,Antec NX200 Mid Tower Case,3499,,"A budget-friendly mid-tower case with a sleek design, tempered glass side panel, and decent airflow for entry-level builds.",,,,,,,,,0,0,0,0,0,0,1,1,0,0,0
+case,Deepcool SMARTER Micro-ATX Case,2799,,"A compact and affordable Micro-ATX case with a minimalist design, suitable for basic office or home setups.",,,,,,,,,0,0,0,0,0,0,1,1,0,0,0
+case,Zebronics Zeb-Warrior 2.0 Mid Tower Case,2499,,"An entry-level mid-tower case with a rugged design and basic features, ideal for budget builds.",,,,,,,,,0,0,0,0,0,0,1,1,0,0,0
+case,Cooler Master MasterBox Q300L Micro-ATX Case,3999,,A compact and versatile Micro-ATX case with a customizable layout and decent airflow for small builds.,,,,,,,,,1,0,0,0,0,0,1,1,0,0,0
+case,Corsair 4000D Airflow Mid-Tower Case,8999,,"A high-performance mid-tower case with excellent airflow, a sleek design, and support for high-end components.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Lian Li O11 Dynamic XL ROG Certified Full Tower Case,19999,,"A premium full-tower case designed for enthusiasts, featuring a dual-chamber layout, tempered glass panels, and support for custom liquid cooling.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,NZXT H710i ATX Mid-Tower Case,14999,,"A high-end mid-tower case with a sleek design, smart device integration, and excellent cable management.",,,,,,,,,1,0,1,0,1,0,0,0,0,0,0
+case,Fractal Design Define 7 XL Full Tower Case,17999,,"A premium full-tower case with a focus on silence and modularity, featuring sound-dampening materials and ample storage options.",,,,,,,,,1,1,0,1,0,0,0,0,0,0,0
+case,Thermaltake View 71 TG RGB Full Tower Case,16999,,"A high-end full-tower case with tempered glass panels, RGB lighting, and support for custom liquid cooling setups.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Phanteks Enthoo Evolv X ATX Mid-Tower Case,15999,,"A premium mid-tower case with a sleek aluminum design, tempered glass panels, and advanced cooling options.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Corsair Obsidian Series 1000D Super Tower Case,49999,,"A massive super-tower case designed for extreme builds, featuring dual-system support, tempered glass panels, and extensive cooling options.",,,,,,,,,0,1,1,1,1,0,0,0,0,0,0
+case,Lian Li PC-O11 Dynamic ROG Certified Mid Tower Case,21999,,"A premium mid-tower case with a dual-chamber design, tempered glass panels, and excellent airflow for high-performance builds.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,NZXT H9 Elite Dual-Chamber ATX Mid Tower Case,18999,,"A high-end dual-chamber mid-tower case with tempered glass panels, RGB lighting, and exceptional airflow for gaming and content creation.",,,,,,,,,0,0,1,1,1,0,0,0,0,0,0
+case,Thermaltake Core P90 Tempered Glass Edition,23999,,"A unique open-frame case with tempered glass panels, designed for showcasing high-end components and custom liquid cooling setups.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Fractal Design Define 7 XL Dark Tempered Glass,21999,,"A premium full-tower case with a focus on silence and modularity, featuring sound-dampening materials and ample storage options.",,,,,,,,,1,1,0,1,0,0,0,0,0,0,0
+case,Phanteks Enthoo Elite Full Tower Case,69999,,"An ultra-premium full-tower case with a dual-system layout, tempered glass panels, and support for custom liquid cooling setups.",,,,,,,,,0,1,1,1,1,0,0,0,0,0,0
+case,Cooler Master Cosmos C700P Full Tower Case,29999,,"A high-end full-tower case with a modular design, tempered glass panels, and support for custom liquid cooling.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,be quiet! Dark Base Pro 900 Rev. 2 Full Tower Case,24999,,"A premium full-tower case with a focus on silence, featuring sound-dampening materials, modular design, and tempered glass panels.",,,,,,,,,1,0,1,1,0,0,0,0,0,0,0
+case,SilverStone Primera PM01-RGB Full Tower Case,18999,,"A high-performance full-tower case with RGB lighting, tempered glass panels, and excellent airflow for gaming and content creation.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,InWin 925 Full Tower Case,34999,,"A luxury full-tower case with a sleek aluminum design, tempered glass panels, and support for high-end components and custom cooling.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Cooler Master MasterBox MB520 RGB Mid Tower Case,6499,,"A stylish mid-tower case with RGB lighting, tempered glass front panel, and good airflow for mid-range builds.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,Antec NX410 Mid Tower Case,5499,,"A mid-tower case with a tempered glass side panel, RGB lighting, and decent airflow for budget gaming builds.",,,,,,,,,0,0,0,0,1,0,1,0,0,0,0
+case,Deepcool MATREXX 55 MESH ADD-RGB 4F Mid Tower Case,6999,,"A mid-tower case with a mesh front panel, RGB fans, and tempered glass side panel for improved airflow and aesthetics.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,Corsair Carbide Series 275R Mid Tower Case,7999,,"A sleek mid-tower case with a minimalist design, tempered glass side panel, and good airflow for mid-range builds.",,,,,,,,,1,0,0,0,1,0,1,0,0,0,0
+case,NZXT H510 Compact ATX Mid Tower Case,7499,,"A compact mid-tower case with a modern design, tempered glass side panel, and front panel USB-C connector.",,,,,,,,,0,0,0,0,1,0,1,1,0,0,0
+case,Phanteks Eclipse P360A Mid Tower Case,8499,,"A mid-tower case with a mesh front panel, RGB lighting, and excellent airflow for gaming and productivity builds.",,,,,,,,,1,0,0,0,1,0,1,0,0,0,0
+case,Thermaltake Versa J24 Tempered Glass ARGB Mid Tower Case,6999,,"A mid-tower case with ARGB lighting, tempered glass side panel, and decent airflow for budget-conscious gamers.",,,,,,,,,0,0,0,0,1,0,1,0,0,0,0
+case,Fractal Design Focus G Mid Tower Case,5999,,"A budget-friendly mid-tower case with a mesh front panel and acrylic side window, designed for good airflow and basic builds.",,,,,,,,,1,0,0,0,0,0,1,1,0,0,0
+case,SilverStone FARA R1 Mid Tower Case,5999,,"A compact mid-tower case with a minimalist design, mesh front panel, and tempered glass side panel for improved airflow.",,,,,,,,,1,0,0,0,0,0,1,1,0,0,0
+case,Antec DF600 Flux Mid Tower Case,8999,,"A mid-tower case with a unique design, RGB lighting, and excellent airflow for gaming and productivity builds.",,,,,,,,,1,0,0,0,1,0,1,0,0,0,0
+case,Corsair Obsidian Series 1000D Super Tower Case,49999,,"A massive super-tower case designed for extreme builds, featuring dual-system support, tempered glass panels, and extensive cooling options.",,,,,,,,,0,1,1,1,1,0,0,0,0,0,0
+case,Phanteks Enthoo Elite Full Tower Case,69999,,"An ultra-premium full-tower case with a dual-system layout, tempered glass panels, and support for custom liquid cooling setups.",,,,,,,,,0,1,1,1,1,0,0,0,0,0,0
+case,Lian Li PC-O11 Dynamic XL ROG Certified Full Tower Case,21999,,"A premium full-tower case designed for enthusiasts, featuring a dual-chamber layout, tempered glass panels, and support for custom liquid cooling.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,NZXT H9 Elite Dual-Chamber ATX Mid Tower Case,18999,,"A high-end dual-chamber mid-tower case with tempered glass panels, RGB lighting, and exceptional airflow for gaming and content creation.",,,,,,,,,0,0,1,1,1,0,0,0,0,0,0
+case,Thermaltake Core P90 Tempered Glass Edition,23999,,"A unique open-frame case with tempered glass panels, designed for showcasing high-end components and custom liquid cooling setups.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Fractal Design Define 7 XL Dark Tempered Glass,21999,,"A premium full-tower case with a focus on silence and modularity, featuring sound-dampening materials and ample storage options.",,,,,,,,,1,1,0,1,0,0,0,0,0,0,0
+case,Cooler Master Cosmos C700P Full Tower Case,29999,,"A high-end full-tower case with a modular design, tempered glass panels, and support for custom liquid cooling.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,be quiet! Dark Base Pro 900 Rev. 2 Full Tower Case,24999,,"A premium full-tower case with a focus on silence, featuring sound-dampening materials, modular design, and tempered glass panels.",,,,,,,,,1,0,1,1,0,0,0,0,0,0,0
+case,SilverStone Primera PM01-RGB Full Tower Case,18999,,"A high-performance full-tower case with RGB lighting, tempered glass panels, and excellent airflow for gaming and content creation.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,InWin 925 Full Tower Case,34999,,"A luxury full-tower case with a sleek aluminum design, tempered glass panels, and support for high-end components and custom cooling.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Thermaltake View 71 TG RGB Full Tower Case,16999,,"A high-end full-tower case with tempered glass panels, RGB lighting, and support for custom liquid cooling setups.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Phanteks Enthoo Evolv X ATX Mid-Tower Case,15999,,"A premium mid-tower case with a sleek aluminum design, tempered glass panels, and advanced cooling options.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Fractal Design Define 7 XL Full Tower Case,17999,,"A premium full-tower case with a focus on silence and modularity, featuring sound-dampening materials and ample storage options.",,,,,,,,,1,1,0,1,0,0,0,0,0,0,0
+case,Lian Li O11 Dynamic XL ROG Certified Full Tower Case,19999,,"A premium full-tower case designed for enthusiasts, featuring a dual-chamber layout, tempered glass panels, and support for custom liquid cooling.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,NZXT H710i ATX Mid-Tower Case,14999,,"A high-end mid-tower case with a sleek design, smart device integration, and excellent cable management.",,,,,,,,,1,0,1,0,1,0,0,0,0,0,0
+case,Cooler Master MasterCase H500P Mesh,15999,,"A high-airflow mid-tower case with a mesh front panel, RGB lighting, and support for high-end components.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Corsair Crystal Series 680X RGB,17999,,"A dual-chamber mid-tower case with tempered glass panels, RGB lighting, and excellent airflow for high-performance builds.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Thermaltake Level 20 GT ARGB,18999,,"A premium mid-tower case with tempered glass panels, ARGB lighting, and support for custom liquid cooling setups.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+case,Phanteks Evolv X,15999,,"A premium mid-tower case with a sleek aluminum design, tempered glass panels, and advanced cooling options.",,,,,,,,,0,1,0,1,1,0,0,0,0,0,0
+case,Lian Li PC-O11 Dynamic,14999,,"A premium mid-tower case with a dual-chamber design, tempered glass panels, and excellent airflow for high-performance builds.",,,,,,,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i3-14100,10999,70,"14th Gen Intel Core i3 processor with 4 cores and 8 threads, ideal for basic computing tasks and office applications.",,,4,65,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 5 5600X,20999,85,"6-core, 12-thread processor with excellent performance for gaming and content creation.",,,6,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-14700K,38999,92,"14th Gen Intel Core i7 processor with 16 cores and 24 threads, designed for high-end gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7950X,58999,98,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-13600K,27999,88,"13th Gen Intel Core i5 processor with 14 cores and 20 threads, suitable for gaming and productivity tasks.",,,14,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7800X3D,45999,95,"8-core, 16-thread processor with 3D V-Cache technology, optimized for gaming and high-performance workloads.",,,8,120,['DDR5'],AM5,,,0,1,0,0,1,0,0,0,0,0,0
+processor,Intel Core i9-14900K,62999,99,"14th Gen Intel Core i9 flagship processor with 24 cores and 32 threads, designed for extreme gaming and professional workloads.",,,24,253,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 7600,23999,82,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR5'],AM5,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-13400F,18999,80,"13th Gen Intel Core i5 processor with 10 cores and 16 threads, ideal for budget gaming and productivity.",,,10,65,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7900X,49999,96,"12-core, 24-thread processor with high performance for content creation, 3D rendering, and gaming.",,,12,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i3-14100,10999,70,"14th Gen Intel Core i3 processor with 4 cores and 8 threads, ideal for basic computing tasks and office applications.",,,4,65,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 5 5600X,20999,85,"6-core, 12-thread processor with excellent performance for gaming and content creation.",,,6,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-14700K,38999,92,"14th Gen Intel Core i7 processor with 16 cores and 24 threads, designed for high-end gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7950X,58999,98,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-13600K,27999,88,"13th Gen Intel Core i5 processor with 14 cores and 20 threads, suitable for gaming and productivity tasks.",,,14,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7800X3D,45999,95,"8-core, 16-thread processor with 3D V-Cache technology, optimized for gaming and high-performance workloads.",,,8,120,['DDR5'],AM5,,,0,1,0,0,1,0,0,0,0,0,0
+processor,Intel Core i9-14900K,62999,99,"14th Gen Intel Core i9 flagship processor with 24 cores and 32 threads, designed for extreme gaming and professional workloads.",,,24,253,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 7600,23999,82,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR5'],AM5,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-13400F,18999,80,"13th Gen Intel Core i5 processor with 10 cores and 16 threads, ideal for budget gaming and productivity.",,,10,65,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7900X,49999,96,"12-core, 24-thread processor with high performance for content creation, 3D rendering, and gaming.",,,12,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i3-13100,9999,68,"13th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,60,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 5300G,14999,72,"4-core, 8-thread processor with integrated graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i7-13700K,42999,94,"13th Gen Intel Core i7 processor with 16 cores and 24 threads, designed for gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7700X,37999,90,"8-core, 16-thread processor with high performance for gaming and content creation.",,,8,105,['DDR5'],AM5,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-12600K,24999,84,"12th Gen Intel Core i5 processor with 10 cores and 16 threads, ideal for gaming and productivity.",,,10,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 5950X,54999,97,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-13900K,59999,99,"13th Gen Intel Core i9 flagship processor with 24 cores and 32 threads, designed for extreme gaming and professional workloads.",,,24,253,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 5500,16999,78,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-12100,11999,69,"12th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,60,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 7 5800X,31999,89,"8-core, 16-thread processor with high performance for gaming and content creation.",,,8,105,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i3-12100,11999,69,"12th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,60,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 5300G,14999,72,"4-core, 8-thread processor with integrated graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Pentium Gold G7400,8999,65,"Entry-level dual-core processor with 4 threads, suitable for basic office tasks and light computing.",,,2,46,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 5 5500,16999,78,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-10400F,15999,75,"10th Gen Intel Core i5 processor with 6 cores and 12 threads, ideal for budget gaming and productivity.",,,6,65,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 3 4100,10999,68,"4-core, 8-thread processor with good performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-10100,12999,70,"10th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Athlon 3000G,6999,60,"Dual-core processor with integrated graphics, ideal for basic computing and light tasks.",,,2,35,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i5-11400,18999,80,"11th Gen Intel Core i5 processor with 6 cores and 12 threads, suitable for gaming and productivity.",,,6,65,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 4600G,17999,77,"6-core, 12-thread processor with integrated graphics, ideal for budget gaming and general use.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-10105,13999,71,"10th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 3200G,9999,66,"4-core, 4-thread processor with integrated graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-9400F,14999,74,"9th Gen Intel Core i5 processor with 6 cores and 6 threads, suitable for budget gaming and productivity.",,,6,65,['DDR4'],LGA 1151,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 3400G,15999,76,"4-core, 8-thread processor with integrated graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-9100F,9999,67,"9th Gen Intel Core i3 processor with 4 cores and 4 threads, suitable for budget gaming and basic tasks.",,,4,65,['DDR4'],LGA 1151,,,0,0,0,0,1,0,1,0,0,0,0
+processor,AMD Athlon 200GE,5999,58,"Dual-core processor with integrated graphics, ideal for basic computing and light tasks.",,,2,35,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i5-8400,17999,73,"8th Gen Intel Core i5 processor with 6 cores and 6 threads, suitable for budget gaming and productivity.",,,6,65,['DDR4'],LGA 1151,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 3 3100,12999,70,"4-core, 8-thread processor with good performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-8100,10999,66,"8th Gen Intel Core i3 processor with 4 cores and 4 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 5 1600,14999,74,"6-core, 12-thread processor with good performance for budget gaming and productivity.",,,6,65,['DDR4'],AM4,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7950X,58999,98,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-14900K,62999,99,"14th Gen Intel Core i9 flagship processor with 24 cores and 32 threads, designed for extreme gaming and professional workloads.",,,24,253,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7900X,49999,96,"12-core, 24-thread processor with high performance for content creation, 3D rendering, and gaming.",,,12,170,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-13900K,59999,99,"13th Gen Intel Core i9 flagship processor with 24 cores and 32 threads, designed for extreme gaming and professional workloads.",,,24,253,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 5950X,54999,97,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-14700K,42999,94,"14th Gen Intel Core i7 processor with 20 cores and 28 threads, designed for high-end gaming and professional workloads.",,,20,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7800X3D,45999,95,"8-core, 16-thread processor with 3D V-Cache technology, optimized for gaming and high-performance workloads.",,,8,120,['DDR5'],AM5,,,0,1,0,0,1,0,0,0,0,0,0
+processor,Intel Core i7-13700K,42999,94,"13th Gen Intel Core i7 processor with 16 cores and 24 threads, designed for gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 7900,47999,95,"12-core, 24-thread processor with high performance for content creation, 3D rendering, and gaming.",,,12,65,['DDR5'],AM5,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-12900K,49999,96,"12th Gen Intel Core i9 flagship processor with 16 cores and 24 threads, designed for extreme gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 5900X,42999,93,"12-core, 24-thread processor with exceptional performance for gaming, content creation, and 3D rendering.",,,12,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-12700K,39999,92,"12th Gen Intel Core i7 processor with 12 cores and 20 threads, designed for high-end gaming and productivity.",,,12,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7700X,37999,90,"8-core, 16-thread processor with high performance for gaming and content creation.",,,8,105,['DDR5'],AM5,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-13600K,27999,88,"13th Gen Intel Core i5 processor with 14 cores and 20 threads, suitable for gaming and productivity tasks.",,,14,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 3950X,49999,94,"16-core, 32-thread processor with exceptional performance for 3D rendering, content creation, and gaming.",,,16,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-10900K,42999,91,"10th Gen Intel Core i9 processor with 10 cores and 20 threads, designed for high-end gaming and professional workloads.",,,10,125,['DDR4'],LGA 1200,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 5800X3D,39999,93,"8-core, 16-thread processor with 3D V-Cache technology, optimized for gaming and high-performance workloads.",,,8,105,['DDR4'],AM4,,,0,1,0,0,1,0,0,0,0,0,0
+processor,Intel Core i7-10700K,34999,89,"10th Gen Intel Core i7 processor with 8 cores and 16 threads, designed for gaming and productivity.",,,8,125,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 3900X,44999,92,"12-core, 24-thread processor with exceptional performance for content creation, 3D rendering, and gaming.",,,12,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i9-9900K,39999,90,"9th Gen Intel Core i9 processor with 8 cores and 16 threads, designed for high-end gaming and professional workloads.",,,8,95,['DDR4'],LGA 1151,,,0,1,0,1,1,0,0,0,0,0,0
+processor,Intel Pentium Gold G6400,5999,62,"Dual-core processor with 4 threads, suitable for basic computing and office tasks.",,,2,58,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Athlon 200GE,4499,58,"Dual-core processor with integrated Vega 3 graphics, ideal for basic computing and light tasks.",,,2,35,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i3-10100,10999,70,"10th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 3200G,8999,66,"4-core, 4-thread processor with integrated Vega 8 graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Pentium Gold G5420,5499,61,"Dual-core processor with 4 threads, suitable for basic computing and office tasks.",,,2,54,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 2200G,7999,65,"4-core, 4-thread processor with integrated Vega 8 graphics, ideal for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Celeron G4930,3499,54,Entry-level dual-core processor for basic computing and office tasks.,,,2,54,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Athlon 300GE,5499,59,"Dual-core processor with integrated Vega 3 graphics, ideal for basic computing and light tasks.",,,2,35,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i3-9100,9999,67,"9th Gen Intel Core i3 processor with 4 cores and 4 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 3100,10999,70,"4-core, 8-thread processor with good performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Pentium Gold G5600,5999,63,"Dual-core processor with 4 threads, suitable for basic computing and office tasks.",,,2,54,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 1200,6999,64,"4-core, 4-thread processor with good performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Celeron G5900,3799,56,Entry-level dual-core processor for basic computing and office tasks.,,,2,58,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Athlon 240GE,5999,61,"Dual-core processor with integrated Vega 3 graphics, ideal for basic computing and light tasks.",,,2,35,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i3-8100,8999,66,"8th Gen Intel Core i3 processor with 4 cores and 4 threads, suitable for basic computing and office tasks.",,,4,65,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 3 1300X,7999,67,"4-core, 4-thread processor with good performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Pentium Gold G5400,4999,60,"Dual-core processor with 4 threads, suitable for basic computing and office tasks.",,,2,54,['DDR4'],LGA 1151,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 5 5600X,20999,85,"6-core, 12-thread processor with excellent performance for gaming and content creation.",,,6,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-13600K,27999,88,"13th Gen Intel Core i5 processor with 14 cores and 20 threads, suitable for gaming and productivity tasks.",,,14,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 5800X,31999,89,"8-core, 16-thread processor with high performance for gaming and content creation.",,,8,105,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-12700K,39999,92,"12th Gen Intel Core i7 processor with 12 cores and 20 threads, designed for high-end gaming and productivity.",,,12,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 7600X,28999,87,"6-core, 12-thread processor with excellent performance for gaming and productivity tasks.",,,6,105,['DDR5'],AM5,,,1,0,0,0,1,0,0,0,0,0,0
+processor,Intel Core i5-12600K,24999,84,"12th Gen Intel Core i5 processor with 10 cores and 16 threads, ideal for gaming and productivity.",,,10,125,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 7700X,37999,90,"8-core, 16-thread processor with high performance for gaming and content creation.",,,8,105,['DDR5'],AM5,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i7-13700K,42999,94,"13th Gen Intel Core i7 processor with 16 cores and 24 threads, designed for gaming and professional workloads.",,,16,125,"['DDR4', 'DDR5']",LGA 1700,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 5900X,42999,93,"12-core, 24-thread processor with exceptional performance for gaming, content creation, and 3D rendering.",,,12,105,['DDR4'],AM4,,,0,1,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-13400F,18999,80,"13th Gen Intel Core i5 processor with 10 cores and 16 threads, ideal for budget gaming and productivity.",,,10,65,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 7600,23999,82,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR5'],AM5,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i7-11700K,32999,86,"11th Gen Intel Core i7 processor with 8 cores and 16 threads, suitable for gaming and productivity.",,,8,125,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 5700X,26999,84,"8-core, 16-thread processor with excellent performance for gaming and content creation.",,,8,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-11600K,24999,83,"11th Gen Intel Core i5 processor with 6 cores and 12 threads, ideal for gaming and productivity.",,,6,125,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 5600,19999,81,"6-core, 12-thread processor with excellent performance for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-12400F,17999,79,"12th Gen Intel Core i5 processor with 6 cores and 12 threads, ideal for budget gaming and productivity.",,,6,65,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 5500,16999,78,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i7-10700K,34999,89,"10th Gen Intel Core i7 processor with 8 cores and 16 threads, designed for gaming and productivity.",,,8,125,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 3700X,29999,85,"8-core, 16-thread processor with excellent performance for gaming and content creation.",,,8,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-10600K,22999,82,"10th Gen Intel Core i5 processor with 6 cores and 12 threads, ideal for gaming and productivity.",,,6,125,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 3600,18999,80,"6-core, 12-thread processor with excellent performance for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-10400F,15999,75,"10th Gen Intel Core i5 processor with 6 cores and 12 threads, ideal for budget gaming and productivity.",,,6,65,['DDR4'],LGA 1200,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 2600X,14999,74,"6-core, 12-thread processor with good performance for gaming and general productivity tasks.",,,6,95,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-9400F,14999,74,"9th Gen Intel Core i5 processor with 6 cores and 6 threads, suitable for budget gaming and productivity.",,,6,65,['DDR4'],LGA 1151,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 1600AF,12999,72,"6-core, 12-thread processor with excellent value for gaming and general productivity tasks.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i3-12100F,10999,70,"12th Gen Intel Core i3 processor with 4 cores and 8 threads, suitable for budget gaming and general use.",,,4,58,"['DDR4', 'DDR5']",LGA 1700,,,0,0,0,0,1,0,1,0,0,0,0
+processor,AMD Ryzen 3 3300X,13999,73,"4-core, 8-thread processor with excellent performance for budget gaming and general use.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i9-11900K,38999,91,"11th Gen Intel Core i9 processor with 8 cores and 16 threads, designed for gaming and professional workloads.",,,8,125,['DDR4'],LGA 1200,,,0,1,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 5700G,29999,85,"8-core, 16-thread processor with integrated graphics, ideal for gaming and content creation.",,,8,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i5-9500,15999,72,"9th Gen Intel Core i5 processor with 6 cores and 6 threads, suitable for general productivity and gaming.",,,6,65,['DDR4'],LGA 1151,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 5 3500X,13999,74,"6-core, 6-thread processor with strong gaming performance at a budget.",,,6,65,['DDR4'],AM4,,,0,0,0,0,1,0,0,0,0,0,0
+processor,Intel Xeon W-1290P,52999,92,Workstation-grade Intel Xeon processor with 10 cores and 20 threads.,,,10,125,['DDR4'],LGA 1200,,,0,0,0,0,0,1,0,0,1,0,0
+processor,AMD Ryzen 3 4300G,11999,68,Quad-core APU with integrated graphics for budget builds.,,,4,65,['DDR4'],AM4,,,0,0,0,0,0,0,1,1,0,0,0
+processor,Intel Core i9-12900KS,53999,97,High-performance version of Intel's 12th Gen i9 with extreme clock speeds.,,,16,150,"['DDR4', 'DDR5']",LGA 1700,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen Threadripper 3990X,329999,100,"64-core, 128-thread processor for extreme workstation tasks.",,,64,280,['DDR4'],sTRX4,,,0,0,0,0,0,1,0,0,1,0,0
+processor,Intel Core i7-10750H,19999,79,High-performance laptop processor with 6 cores and 12 threads.,,,6,45,['DDR4'],BGA1440,,,0,0,0,0,1,0,0,0,0,1,0
+processor,AMD Ryzen 9 7980X,67999,99,"16-core, 32-thread high-end processor optimized for gaming and content creation.",,,16,175,['DDR5'],AM5,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Core i5-8600K,17999,73,"8th Gen Intel Core i5 processor with 6 cores and 6 threads, great for budget gaming and productivity.",,,6,95,['DDR4'],LGA 1151,,,1,0,0,0,1,0,0,0,0,0,0
+processor,AMD Ryzen 7 5800,30999,88,"8-core, 16-thread processor optimized for gaming and multitasking.",,,8,65,['DDR4'],AM4,,,0,0,1,0,1,0,0,0,0,0,0
+processor,Intel Xeon E5-2680 v4,34999,80,14-core workstation processor for professional workloads.,,,14,120,['DDR4'],LGA 2011-3,,,0,0,0,0,0,1,0,0,1,0,0
+processor,AMD Ryzen 5 2500X,12999,70,"4-core, 8-thread budget gaming processor.",,,4,65,['DDR4'],AM4,,,0,0,0,0,1,0,1,0,0,0,0
+processor,Intel Core i9-10850K,39999,93,"10-core, 20-thread processor for high-performance gaming and content creation.",,,10,125,['DDR4'],LGA 1200,,,0,0,0,1,1,0,0,0,0,0,0
+processor,AMD Ryzen 9 3955WX,86999,98,"16-core, 32-thread workstation processor optimized for professional workloads.",,,16,280,['DDR4'],sWRX8,,,0,1,0,0,0,1,0,0,0,0,0
+processor,Intel Pentium Gold G6600,7499,64,Budget dual-core processor suitable for basic computing tasks.,,,2,58,['DDR4'],LGA 1200,,,0,0,0,0,0,0,1,1,0,0,0
+processor,AMD Ryzen 7 3700X,26999,82,"8-core, 16-thread processor with great performance for gaming and productivity.",,,8,65,['DDR4'],AM4,,,1,0,0,0,1,0,0,0,0,0,0
+processor,Intel Core i3-7350K,11999,69,Overclockable dual-core processor for budget gaming enthusiasts.,,,2,60,['DDR4'],LGA 1151,,,0,0,0,0,1,0,1,0,0,0,0
+processor,AMD Ryzen Threadripper PRO 5995WX,399999,100,"64-core, 128-thread extreme performance processor for workstation tasks.",,,64,280,['DDR4'],sWRX8,,,0,1,0,0,0,1,0,0,0,0,0
+psu,Corsair VS450,2999,70,"450W, 80 Plus White, Reliable Entry-Level PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Zebronics ZEB-N450W,2599,65,"450W, Basic PSU, Affordable and Functional",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec VP500P Plus,3799,75,"500W, 80 Plus, Stable and Budget-Friendly",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Cooler Master Elite V3 600W,4499,78,"600W, Basic Efficiency, Quiet Operation",,,,600,,,600W,,0,0,0,0,1,0,1,0,0,0,1
+psu,Deepcool DN500,3499,72,"500W, 80 Plus, Basic Performance",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,GIGABYTE GP-P450B,4199,74,"450W, 80 Plus Bronze, Reliable and Budget-Friendly",,,,450,,,450W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Smart BX1 550W,4799,77,"550W, 80 Plus Bronze, Good Efficiency",,,,550,,,550W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CX550,5299,79,"550W, 80 Plus Bronze, Semi-Modular, Reliable Build",,,,550,,,550W,,0,0,0,0,1,0,1,0,0,0,1
+psu,EVGA 600 W1,4599,76,"600W, 80 Plus White, Non-Modular, Budget Friendly",,,,600,,,600W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Seasonic S12III 500W,4899,78,"500W, 80 Plus Bronze, Silent Fan, Reliable Performance",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Litepower 550W,4299,74,"550W, Non-Modular, Basic PSU for Entry-Level Builds",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Cooler Master MWE 500 White,3999,73,"500W, 80 Plus White, Non-Modular, Basic Efficiency",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,XPG Pylon 650W,6499,82,"650W, 80 Plus Bronze, High Durability, Semi-Modular",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,MSI MAG A650BN,5799,80,"650W, 80 Plus Bronze, Reliable Build, Non-Modular",,,,650,,,650W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Gigabyte P650B,5499,81,"650W, 80 Plus Bronze, Non-Modular, Reliable Performance",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,FSP Hydro K Pro 600W,4999,79,"600W, 80 Plus Bronze, Stable Power Output",,,,600,,,600W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Deepcool PF500,3699,71,"500W, 80 Plus Standard, Budget-Friendly Option",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,SilverStone ST50F-ES230,4799,75,"500W, 80 Plus, Reliable and Affordable",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec Atom B550,4399,74,"550W, Basic Non-Modular PSU, Value for Money",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Thermaltake Smart 700W,6999,83,"700W, 80 Plus Standard, Budget-Friendly, Non-Modular",,,,700,,,700W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CV450,3799,72,"450W, 80 Plus Bronze, Non-Modular, Budget PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Gigabyte GP-P750GM,8999,85,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 750 G5,8999,86,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic Focus GX-750,9499,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair RM850x,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower GF1 850W,9999,88,"850W, 80 Plus Gold, Fully Modular, Reliable Power Supply",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Be Quiet! Straight Power 11 750W,9999,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Strix 750W,10499,88,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,NZXT C850,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Cooler Master V850 Gold V2,9999,88,"850W, 80 Plus Gold, Fully Modular, High Efficiency",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,FSP Hydro G Pro 850W,9499,87,"850W, 80 Plus Gold, Fully Modular, Stable Power Output",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic PRIME Ultra 1000W,14999,92,"1000W, 80 Plus Titanium, Fully Modular, Ultra-High Efficiency",,,,1000,,,1000W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair AX1600i,29999,95,"1600W, 80 Plus Titanium, Fully Modular, Ultra-High Performance",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 1600 T2,27999,94,"1600W, 80 Plus Titanium, Fully Modular, High Efficiency",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower iRGB Plus 1250W,17999,90,"1250W, 80 Plus Platinum, Fully Modular, RGB Lighting",,,,1250,,,1250W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Thor 1200W,24999,93,"1200W, 80 Plus Platinum, Fully Modular, OLED Power Display",,,,1200,,,1200W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair VS450,2999,70,"450W, 80 Plus White, Reliable Entry-Level PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Zebronics ZEB-N450W,2599,65,"450W, Basic PSU, Affordable and Functional",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec VP500P Plus,3799,75,"500W, 80 Plus, Stable and Budget-Friendly",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Cooler Master Elite V3 600W,4499,78,"600W, Basic Efficiency, Quiet Operation",,,,600,,,600W,,0,0,0,0,1,0,1,0,0,0,1
+psu,Deepcool DN500,3499,72,"500W, 80 Plus, Basic Performance",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,GIGABYTE GP-P450B,4199,74,"450W, 80 Plus Bronze, Reliable and Budget-Friendly",,,,450,,,450W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Smart BX1 550W,4799,77,"550W, 80 Plus Bronze, Good Efficiency",,,,550,,,550W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CX550,5299,79,"550W, 80 Plus Bronze, Semi-Modular, Reliable Build",,,,550,,,550W,,0,0,0,0,1,0,1,0,0,0,1
+psu,EVGA 600 W1,4599,76,"600W, 80 Plus White, Non-Modular, Budget Friendly",,,,600,,,600W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Seasonic S12III 500W,4899,78,"500W, 80 Plus Bronze, Silent Fan, Reliable Performance",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Litepower 550W,4299,74,"550W, Non-Modular, Basic PSU for Entry-Level Builds",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Cooler Master MWE 500 White,3999,73,"500W, 80 Plus White, Non-Modular, Basic Efficiency",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,XPG Pylon 650W,6499,82,"650W, 80 Plus Bronze, High Durability, Semi-Modular",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,MSI MAG A650BN,5799,80,"650W, 80 Plus Bronze, Reliable Build, Non-Modular",,,,650,,,650W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Gigabyte P650B,5499,81,"650W, 80 Plus Bronze, Non-Modular, Reliable Performance",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,FSP Hydro K Pro 600W,4999,79,"600W, 80 Plus Bronze, Stable Power Output",,,,600,,,600W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Deepcool PF500,3699,71,"500W, 80 Plus Standard, Budget-Friendly Option",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,SilverStone ST50F-ES230,4799,75,"500W, 80 Plus, Reliable and Affordable",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec Atom B550,4399,74,"550W, Basic Non-Modular PSU, Value for Money",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Thermaltake Smart 700W,6999,83,"700W, 80 Plus Standard, Budget-Friendly, Non-Modular",,,,700,,,700W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CV450,3799,72,"450W, 80 Plus Bronze, Non-Modular, Budget PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Gigabyte GP-P750GM,8999,85,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 750 G5,8999,86,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic Focus GX-750,9499,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair RM850x,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower GF1 850W,9999,88,"850W, 80 Plus Gold, Fully Modular, Reliable Power Supply",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Be Quiet! Straight Power 11 750W,9999,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Strix 750W,10499,88,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,NZXT C850,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Cooler Master V850 Gold V2,9999,88,"850W, 80 Plus Gold, Fully Modular, High Efficiency",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,FSP Hydro G Pro 850W,9499,87,"850W, 80 Plus Gold, Fully Modular, Stable Power Output",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic PRIME Ultra 1000W,14999,92,"1000W, 80 Plus Titanium, Fully Modular, Ultra-High Efficiency",,,,1000,,,1000W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair AX1600i,29999,95,"1600W, 80 Plus Titanium, Fully Modular, Ultra-High Performance",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 1600 T2,27999,94,"1600W, 80 Plus Titanium, Fully Modular, High Efficiency",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower iRGB Plus 1250W,17999,90,"1250W, 80 Plus Platinum, Fully Modular, RGB Lighting",,,,1250,,,1250W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Thor 1200W,24999,93,"1200W, 80 Plus Platinum, Fully Modular, OLED Power Display",,,,1200,,,1200W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair VS450,2999,70,"450W, 80 Plus White, Reliable Entry-Level PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Zebronics ZEB-N450W,2599,65,"450W, Basic PSU, Affordable and Functional",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec VP500P Plus,3799,75,"500W, 80 Plus, Stable and Budget-Friendly",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Cooler Master Elite V3 600W,4499,78,"600W, Basic Efficiency, Quiet Operation",,,,600,,,600W,,0,0,0,0,1,0,1,0,0,0,1
+psu,Deepcool DN500,3499,72,"500W, 80 Plus, Basic Performance",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,GIGABYTE GP-P450B,4199,74,"450W, 80 Plus Bronze, Reliable and Budget-Friendly",,,,450,,,450W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Smart BX1 550W,4799,77,"550W, 80 Plus Bronze, Good Efficiency",,,,550,,,550W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CX550,5299,79,"550W, 80 Plus Bronze, Semi-Modular, Reliable Build",,,,550,,,550W,,0,0,0,0,1,0,1,0,0,0,1
+psu,EVGA 600 W1,4599,76,"600W, 80 Plus White, Non-Modular, Budget Friendly",,,,600,,,600W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Seasonic S12III 500W,4899,78,"500W, 80 Plus Bronze, Silent Fan, Reliable Performance",,,,500,,,500W,,0,0,0,1,0,0,1,0,0,0,1
+psu,Thermaltake Litepower 550W,4299,74,"550W, Non-Modular, Basic PSU for Entry-Level Builds",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Cooler Master MWE 500 White,3999,73,"500W, 80 Plus White, Non-Modular, Basic Efficiency",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,XPG Pylon 650W,6499,82,"650W, 80 Plus Bronze, High Durability, Semi-Modular",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,MSI MAG A650BN,5799,80,"650W, 80 Plus Bronze, Reliable Build, Non-Modular",,,,650,,,650W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Gigabyte P650B,5499,81,"650W, 80 Plus Bronze, Non-Modular, Reliable Performance",,,,650,,,650W,,0,0,0,1,1,0,0,0,0,0,1
+psu,FSP Hydro K Pro 600W,4999,79,"600W, 80 Plus Bronze, Stable Power Output",,,,600,,,600W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Deepcool PF500,3699,71,"500W, 80 Plus Standard, Budget-Friendly Option",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,SilverStone ST50F-ES230,4799,75,"500W, 80 Plus, Reliable and Affordable",,,,500,,,500W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Antec Atom B550,4399,74,"550W, Basic Non-Modular PSU, Value for Money",,,,550,,,550W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Thermaltake Smart 700W,6999,83,"700W, 80 Plus Standard, Budget-Friendly, Non-Modular",,,,700,,,700W,,0,0,0,1,1,0,1,0,0,0,0
+psu,Corsair CV450,3799,72,"450W, 80 Plus Bronze, Non-Modular, Budget PSU",,,,450,,,450W,,0,0,0,0,0,0,1,0,0,0,1
+psu,Gigabyte GP-P750GM,8999,85,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 750 G5,8999,86,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic Focus GX-750,9499,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair RM850x,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower GF1 850W,9999,88,"850W, 80 Plus Gold, Fully Modular, Reliable Power Supply",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Be Quiet! Straight Power 11 750W,9999,87,"750W, 80 Plus Gold, Fully Modular, Silent Operation",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Strix 750W,10499,88,"750W, 80 Plus Gold, Fully Modular, High Efficiency",,,,750,,,750W,,0,0,0,0,1,0,0,0,0,0,0
+psu,NZXT C850,10999,89,"850W, 80 Plus Gold, Fully Modular, High Performance",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Cooler Master V850 Gold V2,9999,88,"850W, 80 Plus Gold, Fully Modular, High Efficiency",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,FSP Hydro G Pro 850W,9499,87,"850W, 80 Plus Gold, Fully Modular, Stable Power Output",,,,850,,,850W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Seasonic PRIME Ultra 1000W,14999,92,"1000W, 80 Plus Titanium, Fully Modular, Ultra-High Efficiency",,,,1000,,,1000W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Corsair AX1600i,29999,95,"1600W, 80 Plus Titanium, Fully Modular, Ultra-High Performance",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,EVGA SuperNOVA 1600 T2,27999,94,"1600W, 80 Plus Titanium, Fully Modular, High Efficiency",,,,1600,,,1600W,,0,0,0,0,1,0,0,0,0,0,0
+psu,Thermaltake Toughpower iRGB Plus 1250W,17999,90,"1250W, 80 Plus Platinum, Fully Modular, RGB Lighting",,,,1250,,,1250W,,0,0,0,0,1,0,0,0,0,0,0
+psu,ASUS ROG Thor 1200W,24999,93,"1200W, 80 Plus Platinum, Fully Modular, OLED Power Display",,,,1200,,,1200W,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Strix B550-F Gaming,18499,90,A high-performance gaming motherboard with PCIe 4.0 and robust power delivery.,5100,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG B660M Mortar WiFi,14999,85,A solid choice for Intel 12th Gen CPUs with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,1,1,0,0,0,0,0,1
+motherboard,Gigabyte X570 AORUS Elite,17999,88,Premium AM4 motherboard with PCIe 4.0 and advanced thermal design.,4400,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B450M Steel Legend,8999,75,Budget-friendly motherboard with decent gaming and productivity features.,3600,,,,DDR4,AM4,,,0,0,0,0,0,0,1,0,0,0,1
+motherboard,ASUS Prime H610M-E D4,7499,70,An entry-level Intel motherboard suitable for basic office and home use.,3200,,,,DDR4,LGA1700,,,0,0,0,0,0,0,1,0,0,0,1
+motherboard,MSI MPG Z690 Edge WiFi,21999,92,High-end Intel Z690 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS TUF Gaming X570-Plus,16999,87,Durable AMD X570 motherboard with PCIe 4.0 and military-grade components.,4400,,,,DDR4,AM4,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,Gigabyte B660M DS3H AX,11999,80,Affordable Intel B660 motherboard with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock Z690 Phantom Gaming 4,18999,89,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR4 support.,5333,,,,DDR4,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI B550-A PRO,12999,84,Reliable AMD B550 motherboard with PCIe 4.0 and robust power delivery.,4400,,,,DDR4,AM4,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,ASUS ROG Maximus Z690 Hero,29999,95,"Premium Intel Z690 motherboard with PCIe 5.0, DDR5, and advanced cooling.",6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B550M DS3H,9999,78,Budget-friendly AMD B550 motherboard with PCIe 4.0 support.,4400,,,,DDR4,AM4,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock H670M-ITX/ax,13999,82,Compact Intel H670 motherboard with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO Z690-A,19999,90,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR4 support.,5333,,,,DDR4,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Crosshair VIII Dark Hero,34999,96,High-end AMD X570 motherboard with PCIe 4.0 and advanced cooling.,5100,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B760M Steel Legend,12999,83,Mid-range Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte Z790 AORUS Elite AX,24999,93,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI B760M Mortar WiFi,15999,86,Solid Intel B760 motherboard with WiFi 6 and PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,1,1,0,0,0,0,0,1
+motherboard,ASUS Prime Z790-P,19999,88,Affordable Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760M DS3H,10999,79,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock X670E Steel Legend,25999,94,High-end AMD X670E motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG X670E Tomahawk WiFi,27999,95,"Premium AMD X670E motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Strix B550-F Gaming,18499,90,A high-performance gaming motherboard with PCIe 4.0 and robust power delivery.,5100,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG B660M Mortar WiFi,14999,85,A solid choice for Intel 12th Gen CPUs with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,1,1,0,0,0,0,0,1
+motherboard,ASUS ROG Strix Z790-E Gaming WiFi,29999,94,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B760 Gaming X AX,15999,87,Mid-range Intel B760 motherboard with WiFi 6 and PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Tomahawk WiFi,17999,89,High-performance Intel B760 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B760 Pro RS,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS TUF Gaming B760-Plus WiFi,18999,88,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,5333,,,,DDR5,LGA1700,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,Gigabyte Z690 AORUS Ultra,24999,93,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MPG Z790 Edge WiFi,27999,95,"Premium Intel Z790 motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock Z790 Taichi,29999,96,High-end Intel Z790 motherboard with PCIe 5.0 and advanced cooling.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Strix X670E-F Gaming WiFi,32999,97,High-performance AMD X670E motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte X670 AORUS Elite AX,25999,94,High-performance AMD X670 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG X670 Tomahawk WiFi,27999,95,"Premium AMD X670 motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock X670E Phantom Gaming,29999,96,High-end AMD X670E motherboard with PCIe 5.0 and advanced cooling.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS Prime Z790-A,19999,88,Affordable Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte Z790M AORUS Elite AX,18999,87,Compact Intel Z790 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI PRO Z790-A WiFi,21999,90,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock Z790 Steel Legend,23999,92,Mid-range Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Strix B760-F Gaming WiFi,19999,89,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B760 AORUS Pro AX,17999,88,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Torpedo,16999,87,Affordable Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M Pro RS,14999,85,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A WiFi,15999,86,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M DS3H AX,13999,84,Budget-friendly Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO B760M-A WiFi,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M Steel Legend WiFi,15999,86,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS TUF Gaming B760M-Plus WiFi,16999,87,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 Gaming X,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Mortar,15999,86,Mid-range Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M Pro4,13999,84,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-K,12999,83,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M Gaming X,14999,85,Mid-range Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO B760M-A,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M-HDV,11999,82,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M DS3H,12999,83,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Bazooka,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M-ITX/ac,14999,85,Compact Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS ROG Strix B760-I Gaming WiFi,19999,88,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760I AORUS Pro AX,18999,87,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MPG B760I Edge WiFi,17999,86,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M-ITX/ac WiFi,16999,85,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A WiFi,15999,84,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M Gaming X AX,16999,85,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Mortar WiFi,17999,86,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M Steel Legend WiFi,18999,87,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS TUF Gaming B760M-Plus WiFi,19999,88,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 AORUS Elite AX,20999,89,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Tomahawk WiFi,21999,90,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760 Pro RS WiFi,22999,91,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Strix B760-F Gaming WiFi,23999,92,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 AORUS Master,24999,93,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MPG B760 Edge WiFi,25999,94,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760 Taichi,26999,95,High-end Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Maximus B760 Hero,27999,96,High-end Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Strix B550-F Gaming,18499,90,A high-performance gaming motherboard with PCIe 4.0 and robust power delivery.,5100,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG B660M Mortar WiFi,14999,85,A solid choice for Intel 12th Gen CPUs with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,1,1,0,0,0,0,0,1
+motherboard,Gigabyte X570 AORUS Elite,17999,88,Premium AM4 motherboard with PCIe 4.0 and advanced thermal design.,4400,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B450M Steel Legend,8999,75,Budget-friendly motherboard with decent gaming and productivity features.,3600,,,,DDR4,AM4,,,0,0,0,0,0,0,1,0,0,0,1
+motherboard,ASUS Prime H610M-E D4,7499,70,An entry-level Intel motherboard suitable for basic office and home use.,3200,,,,DDR4,LGA1700,,,0,0,0,0,0,0,1,0,0,0,1
+motherboard,MSI MPG Z690 Edge WiFi,21999,92,High-end Intel Z690 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS TUF Gaming X570-Plus,16999,87,Durable AMD X570 motherboard with PCIe 4.0 and military-grade components.,4400,,,,DDR4,AM4,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,Gigabyte B660M DS3H AX,11999,80,Affordable Intel B660 motherboard with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock Z690 Phantom Gaming 4,18999,89,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR4 support.,5333,,,,DDR4,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI B550-A PRO,12999,84,Reliable AMD B550 motherboard with PCIe 4.0 and robust power delivery.,4400,,,,DDR4,AM4,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,ASUS ROG Maximus Z690 Hero,29999,95,"Premium Intel Z690 motherboard with PCIe 5.0, DDR5, and advanced cooling.",6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B550M DS3H,9999,78,Budget-friendly AMD B550 motherboard with PCIe 4.0 support.,4400,,,,DDR4,AM4,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock H670M-ITX/ax,13999,82,Compact Intel H670 motherboard with WiFi 6 and PCIe 4.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO Z690-A,19999,90,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR4 support.,5333,,,,DDR4,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Crosshair VIII Dark Hero,34999,96,High-end AMD X570 motherboard with PCIe 4.0 and advanced cooling.,5100,,,,DDR4,AM4,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B760M Steel Legend,12999,83,Mid-range Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte Z790 AORUS Elite AX,24999,93,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI B760M Mortar WiFi,15999,86,Solid Intel B760 motherboard with WiFi 6 and PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,1,1,0,0,0,0,0,1
+motherboard,ASUS Prime Z790-P,19999,88,Affordable Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760M DS3H,10999,79,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock X670E Steel Legend,25999,94,High-end AMD X670E motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG X670E Tomahawk WiFi,27999,95,"Premium AMD X670E motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Strix Z790-E Gaming WiFi,29999,94,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B760 Gaming X AX,15999,87,Mid-range Intel B760 motherboard with WiFi 6 and PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Tomahawk WiFi,17999,89,High-performance Intel B760 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock B760 Pro RS,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS TUF Gaming B760-Plus WiFi,18999,88,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,5333,,,,DDR5,LGA1700,,,0,0,0,1,1,0,0,0,0,0,0
+motherboard,Gigabyte Z690 AORUS Ultra,24999,93,High-performance Intel Z690 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MPG Z790 Edge WiFi,27999,95,"Premium Intel Z790 motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock Z790 Taichi,29999,96,High-end Intel Z790 motherboard with PCIe 5.0 and advanced cooling.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS ROG Strix X670E-F Gaming WiFi,32999,97,High-performance AMD X670E motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte X670 AORUS Elite AX,25999,94,High-performance AMD X670 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,MSI MAG X670 Tomahawk WiFi,27999,95,"Premium AMD X670 motherboard with PCIe 5.0, DDR5, and WiFi 6E.",6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock X670E Phantom Gaming,29999,96,High-end AMD X670E motherboard with PCIe 5.0 and advanced cooling.,6400,,,,DDR5,AM5,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASUS Prime Z790-A,19999,88,Affordable Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte Z790M AORUS Elite AX,18999,87,Compact Intel Z790 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI PRO Z790-A WiFi,21999,90,High-performance Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,ASRock Z790 Steel Legend,23999,92,Mid-range Intel Z790 motherboard with PCIe 5.0 and DDR5 support.,6400,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Strix B760-F Gaming WiFi,19999,89,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,0,0,0,0,0
+motherboard,Gigabyte B760 AORUS Pro AX,17999,88,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,6000,,,,DDR5,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Torpedo,16999,87,Affordable Intel B760 motherboard with PCIe 5.0 and DDR4 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M Pro RS,14999,85,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A WiFi,15999,86,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M DS3H AX,13999,84,Budget-friendly Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO B760M-A WiFi,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M Steel Legend WiFi,15999,86,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS TUF Gaming B760M-Plus WiFi,16999,87,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 Gaming X,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Mortar,15999,86,Mid-range Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M Pro4,13999,84,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-K,12999,83,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M Gaming X,14999,85,Mid-range Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI PRO B760M-A,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M-HDV,11999,82,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A,14999,85,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M DS3H,12999,83,Budget-friendly Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Bazooka,13999,84,Affordable Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASRock B760M-ITX/ac,14999,85,Compact Intel B760 motherboard with PCIe 5.0 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS ROG Strix B760-I Gaming WiFi,19999,88,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760I AORUS Pro AX,18999,87,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MPG B760I Edge WiFi,17999,86,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M-ITX/ac WiFi,16999,85,Compact Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,ASUS Prime B760M-A WiFi,15999,84,Affordable Intel B760 motherboard with PCIe 5.0 and WiFi 6 support.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,Gigabyte B760M Gaming X AX,16999,85,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,1
+motherboard,MSI MAG B760M Mortar WiFi,17999,86,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760M Steel Legend WiFi,18999,87,Mid-range Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS TUF Gaming B760M-Plus WiFi,19999,88,Durable Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 AORUS Elite AX,20999,89,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MAG B760 Tomahawk WiFi,21999,90,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760 Pro RS WiFi,22999,91,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Strix B760-F Gaming WiFi,23999,92,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,Gigabyte B760 AORUS Master,24999,93,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,MSI MPG B760 Edge WiFi,25999,94,High-performance Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASRock B760 Taichi,26999,95,High-end Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+motherboard,ASUS ROG Maximus B760 Hero,27999,96,High-end Intel B760 motherboard with PCIe 5.0 and WiFi 6E.,4800,,,,DDR4,LGA1700,,,0,0,0,0,1,0,1,0,0,0,0
+ssd,Samsung 990 Pro 1TB,12999,98,High-performance NVMe SSD with PCIe Gen4 for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Crucial P3 Plus 2TB,9999,85,Budget-friendly PCIe Gen4 SSD suitable for gaming and productivity.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,WD Black SN850X 1TB,10999,95,High-end NVMe SSD optimized for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston NV2 1TB,5999,75,Entry-level NVMe SSD for general and office use.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Samsung 870 EVO 1TB,6999,80,Reliable SATA SSD suitable for general and office use.,,,,,,,1TB,SATA 3,0,0,0,1,0,0,1,0,0,0,1
+ssd,Seagate FireCuda 530 2TB,17999,99,Premium PCIe 4.0 NVMe SSD for extreme gaming and high-end workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,ADATA XPG SX8200 Pro 1TB,8499,90,Well-balanced NVMe SSD with excellent performance for gaming and editing.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,WD Blue SN570 1TB,5999,78,Budget-friendly NVMe SSD for office use and general applications.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Sabrent Rocket 4 Plus 2TB,14999,97,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston A2000 1TB,6999,82,Affordable NVMe SSD with solid performance for general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Corsair MP600 Pro XT 2TB,15999,96,High-end PCIe 4.0 NVMe SSD for gaming and professional applications.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Intel 670p 1TB,7499,80,Budget-friendly NVMe SSD for general and office use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,TeamGroup T-Force Cardea Z44L 1TB,8999,88,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,SanDisk Extreme Pro 1TB,10999,92,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,HP EX950 1TB,7999,85,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,PNY XLR8 CS3040 2TB,13999,94,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,SK Hynix Gold P31 1TB,8999,89,High-performance NVMe SSD with excellent power efficiency for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Micron 3400 1TB,9499,91,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Patriot Viper VPN100 1TB,7999,84,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Silicon Power US70 1TB,8499,87,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Lexar NM800 1TB,8999,88,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Inland Performance Plus 1TB,7999,86,Affordable PCIe 4.0 NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Gigabyte AORUS Gen4 1TB,11999,93,High-performance PCIe 4.0 NVMe SSD designed for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Toshiba XG6 1TB,8999,87,High-performance NVMe SSD for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Phison E18 2TB,13999,96,High-end PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston KC3000 1TB,10999,94,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Seagate Barracuda 510 1TB,7999,85,Affordable NVMe SSD for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Corsair Force MP510 1TB,9499,90,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Intel Optane 905P 1TB,24999,99,Ultra-high-performance SSD for extreme workloads and gaming.,,,,,,,1TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,TeamGroup T-Force Delta Max 1TB,8999,88,High-performance NVMe SSD for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,PNY CS2140 1TB,7999,84,Affordable NVMe SSD for office use and general applications.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,ADATA Legend 840 1TB,7499,83,Budget-friendly NVMe SSD for general and office use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Crucial MX500 1TB,6999,80,Reliable SATA SSD suitable for general and office use.,,,,,,,1TB,SATA 3,0,0,0,1,0,0,1,0,0,0,1
+ssd,Western Digital Blue 3D NAND 1TB,6499,79,Reliable SATA SSD for general and office use.,,,,,,,1TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,SanDisk Ultra 3D 1TB,6999,80,Reliable SATA SSD for general and office use.,,,,,,,1TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Seagate BarraCuda 120 1TB,6499,78,Reliable SATA SSD for general and office use.,,,,,,,1TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Kingston A400 1TB,5999,75,Entry-level SATA SSD for general and office use.,,,,,,,1TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Samsung 990 Pro 1TB,12999,98,High-performance NVMe SSD with PCIe Gen4 for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Crucial P3 Plus 2TB,9999,85,Budget-friendly PCIe Gen4 SSD suitable for gaming and productivity.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Samsung 990 Pro 2TB,24999,99,High-performance NVMe SSD with PCIe Gen4 for gaming and content creation.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Crucial P3 Plus 1TB,7999,83,Budget-friendly PCIe Gen4 SSD suitable for gaming and productivity.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,WD Black SN850X 2TB,19999,97,High-end NVMe SSD optimized for gaming and content creation.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston NV2 2TB,10999,78,Entry-level NVMe SSD for general and office use.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Samsung 870 EVO 2TB,12999,85,Reliable SATA SSD suitable for general and office use.,,,,,,,2TB,SATA 3,0,0,0,1,0,0,1,0,0,0,1
+ssd,Seagate FireCuda 530 1TB,14999,98,Premium PCIe 4.0 NVMe SSD for extreme gaming and high-end workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,ADATA XPG SX8200 Pro 2TB,14999,92,Well-balanced NVMe SSD with excellent performance for gaming and editing.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,WD Blue SN570 2TB,10999,80,Budget-friendly NVMe SSD for office use and general applications.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Sabrent Rocket 4 Plus 1TB,12999,96,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston A2000 2TB,12999,85,Affordable NVMe SSD with solid performance for general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Corsair MP600 Pro XT 1TB,12999,95,High-end PCIe 4.0 NVMe SSD for gaming and professional applications.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Intel 670p 2TB,14999,82,Budget-friendly NVMe SSD for general and office use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,TeamGroup T-Force Cardea Z44L 2TB,14999,90,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,SanDisk Extreme Pro 2TB,19999,94,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,HP EX950 2TB,14999,88,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,PNY XLR8 CS3040 1TB,10999,92,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,SK Hynix Gold P31 2TB,14999,90,High-performance NVMe SSD with excellent power efficiency for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Micron 3400 2TB,18999,93,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Patriot Viper VPN100 2TB,14999,86,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Silicon Power US70 2TB,14999,89,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Lexar NM800 2TB,14999,90,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Inland Performance Plus 2TB,14999,88,Affordable PCIe 4.0 NVMe SSD with solid performance for gaming and general use.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Gigabyte AORUS Gen4 2TB,19999,95,High-performance PCIe 4.0 NVMe SSD designed for gaming and professional workloads.,,,,,,,2TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Toshiba XG6 2TB,14999,89,High-performance NVMe SSD for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Phison E18 1TB,12999,95,High-end PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston KC3000 2TB,19999,96,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,2TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Seagate Barracuda 510 2TB,14999,87,Affordable NVMe SSD for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Corsair Force MP510 2TB,17999,92,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,2TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Intel Optane 905P 2TB,49999,99,Ultra-high-performance SSD for extreme workloads and gaming.,,,,,,,2TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,TeamGroup T-Force Delta Max 2TB,14999,90,High-performance NVMe SSD for gaming and general use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,PNY CS2140 2TB,14999,86,Affordable NVMe SSD for office use and general applications.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,ADATA Legend 840 2TB,14999,85,Budget-friendly NVMe SSD for general and office use.,,,,,,,2TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Crucial MX500 2TB,12999,82,Reliable SATA SSD suitable for general and office use.,,,,,,,2TB,SATA 3,0,0,0,1,0,0,1,0,0,0,1
+ssd,Western Digital Blue 3D NAND 2TB,12999,81,Reliable SATA SSD for general and office use.,,,,,,,2TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,SanDisk Ultra 3D 2TB,12999,82,Reliable SATA SSD for general and office use.,,,,,,,2TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Seagate BarraCuda 120 2TB,12999,80,Reliable SATA SSD for general and office use.,,,,,,,2TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Kingston A400 2TB,10999,78,Entry-level SATA SSD for general and office use.,,,,,,,2TB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Samsung 980 Pro 500GB,8999,95,High-performance NVMe SSD with PCIe Gen4 for gaming and content creation.,,,,,,,500GB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Crucial P5 Plus 1TB,10999,90,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,WD Blue SN550 1TB,7999,82,Affordable NVMe SSD for general use and office productivity.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Kingston KC2500 1TB,9999,88,High-performance NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Seagate FireCuda 520 1TB,11999,93,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,ADATA XPG Gammix S50 Lite 1TB,9499,87,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Corsair MP400 1TB,8999,85,Affordable PCIe 3.0 NVMe SSD for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Intel 660p 1TB,7999,81,Budget-friendly NVMe SSD for general and office use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,TeamGroup T-Force Cardea Zero Z440 1TB,8999,86,High-performance PCIe 4.0 NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 4.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,PNY CS3030 1TB,8999,85,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,HP EX920 1TB,8499,84,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,SK Hynix Platinum P41 1TB,12999,94,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Micron 2300 1TB,7999,83,Budget-friendly NVMe SSD for general and office use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Patriot Viper VPR100 1TB,8499,85,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Silicon Power P34A80 1TB,8999,86,High-performance NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Lexar NM610 1TB,7999,82,Budget-friendly NVMe SSD for general and office use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Inland Premium 1TB,7999,84,Affordable NVMe SSD with solid performance for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Gigabyte AORUS NVMe Gen4 500GB,7999,89,High-performance PCIe 4.0 NVMe SSD for gaming and professional workloads.,,,,,,,500GB,PCIe 4.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Toshiba RC500 1TB,8499,84,High-performance NVMe SSD for gaming and general use.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Phison E12 1TB,8999,87,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,1TB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Kingston KC2000 1TB,9999,89,High-performance NVMe SSD for gaming and content creation.,,,,,,,1TB,PCIe 3.0 NVMe,0,0,1,1,1,0,0,0,0,0,0
+ssd,Seagate Barracuda 510 500GB,5999,82,Affordable NVMe SSD for gaming and general use.,,,,,,,500GB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,Corsair Force MP510 500GB,6999,88,High-performance NVMe SSD for gaming and professional workloads.,,,,,,,500GB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,Intel Optane 800P 118GB,9999,90,Ultra-high-performance SSD for extreme workloads and gaming.,,,,,,,118GB,PCIe 3.0 NVMe,0,1,1,1,1,0,0,0,0,0,0
+ssd,TeamGroup T-Force Delta Max 500GB,6999,85,High-performance NVMe SSD for gaming and general use.,,,,,,,500GB,PCIe 3.0 NVMe,0,0,0,0,1,0,1,0,0,0,1
+ssd,PNY CS2140 500GB,5999,82,Affordable NVMe SSD for office use and general applications.,,,,,,,500GB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,ADATA Legend 840 500GB,5999,81,Budget-friendly NVMe SSD for general and office use.,,,,,,,500GB,PCIe 3.0 NVMe,0,0,0,0,0,0,1,0,0,0,1
+ssd,Crucial MX500 500GB,4999,78,Reliable SATA SSD suitable for general and office use.,,,,,,,500GB,SATA 3,0,0,0,1,0,0,1,0,0,0,1
+ssd,Western Digital Blue 3D NAND 500GB,4999,77,Reliable SATA SSD for general and office use.,,,,,,,500GB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,SanDisk Ultra 3D 500GB,4999,78,Reliable SATA SSD for general and office use.,,,,,,,500GB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Seagate BarraCuda 120 500GB,4999,76,Reliable SATA SSD for general and office use.,,,,,,,500GB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
+ssd,Kingston A400 500GB,3999,74,Entry-level SATA SSD for general and office use.,,,,,,,500GB,SATA 3,0,0,0,0,0,0,1,0,0,0,1
