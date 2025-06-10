@@ -1,50 +1,66 @@
+💻 AI-Powered PC Spec Recommender - SPECMATCH
+An AI-based PC specification recommendation system that suggests optimal PC builds based on your budget and purpose (e.g., gaming, editing, office work). This tool helps users make smarter hardware choices using machine learning and optimization techniques.
 
-🚀 AI-Powered PC Spec Recommender - SPECMATCH
-Your Smart PC Building Companion
+🚀 Features
+🔢 Smart Recommendations: Suggests CPU, GPU, RAM, Storage, etc., tailored to budget and use-case.
 
-🌟 Features That Set Us Apart
-🎯 Precision-Tuned Recommendations
-AI-Driven PC Builds tailored to your exact budget and purpose (Gaming 🎮, Development 💻, Content Creation 🎬, or Everyday Use 🏠)
+🧠 AI & ML Models: Predicts components using trained regression/classification models.
 
-ML-Powered Predictions ensuring optimal performance-to-cost ratio
+🧬 Optimization Engine: Uses Genetic Algorithm/Random Forest to find the best combination.
 
-Smart Optimization with Genetic Algorithms & Random Forest for flawless component matching
+🌐 User-Friendly Interface: Simple web interface using Flask (Python) and HTML/CSS frontend.
 
-🖥️ Seamless User Experience
-Interactive Web Dashboard (Built with Flask + Bootstrap)
+📸 Demo
+Add a screenshot or link to a demo video here (e.g., hosted on Vercel/Render)
 
-Real-Time Adjustments – tweak your budget and see instant recommendations
-
-Saved Builds History (Powered by MongoDB)
-
-📊 Data-Backed Accuracy
-Model Evaluation via R² Score, RMSE, and MAPE
-
-Dynamic Pricing Updates – always recommending the best deals
-
-⚙️ How SPECMATCH Works
-1️⃣ Tell Us Your Needs
-
-Enter your budget
-
-Select your primary use case (Gaming, Coding, Editing, etc.)
-
-2️⃣ AI Does the Magic
-
-Our trained ML models analyze thousands of component benchmarks
-
-Optimization algorithms fine-tune for max performance & value
-
-3️⃣ Get Your Dream Build
-
-Receive a fully optimized PC build with CPU, GPU, RAM, and more
-
-Option to export specs or save for later
 
 🛠️ Tech Stack
-Category	Technologies Used
-Frontend	HTML5, CSS3, JavaScript, Tailwind CSS
-Backend	Python, Flask
-Database	MongoDB (NoSQL for flexible storage)
-AI/ML Core	Scikit-learn, PyTorch (for deep learning models)
-Optimization Random Forest
+Frontend: HTML, CSS, Javascript ,Tailwind CSS
+
+Backend: Flask (Python)
+
+Database: MongoDB
+
+Machine Learning: Scikit-learn, PyTorch
+
+Optimization:  Random Forest
+
+📥 How It Works
+User Input:
+
+Enters budget and purpose (e.g., ₹50,000 for gaming)
+
+Model Processing:
+
+Predicts best PC configuration using ML models
+
+Optimizes components using budget constraints
+
+Output:
+
+Displays recommended CPU, GPU, RAM, Storage, etc.
+
+📦 Installation
+bash
+Copy
+Edit
+git clone https://github.com/your-username/pc-spec-recommender.git
+cd pc-spec-recommender
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python app.py
+Note: Make sure to set your MongoDB URI in .env file.
+
+⚙️ Sample Output
+
+🧠 Budget: ₹70,000
+🎯 Purpose: Video Editing
+
+🔧 Recommended Build:
+- CPU: AMD Ryzen 5 5600
+- GPU: NVIDIA RTX 3060
+- RAM: 16GB DDR4
+- Storage: 1TB NVMe SSD
+- Motherboard: B550M
+- PSU: 650W Bronze
